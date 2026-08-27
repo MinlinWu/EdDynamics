@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+source "$(cd "$(dirname "$0")" && pwd)/env.sh"
+acquire_lock macro_suff
+ensure_code_snapshot
+select_gpu "${1:-${GPU_ID:-0}}"
+require_file "${PRED_MODEL_ROOT}/best_model.pt"
+if [[ "${FORCE}" == "1" || ! -f "${MACRO_ROOT}/metadata/stage5_macro_sufficiency_artifacts.pkl" ]]; then
+  run_logged macro_suff_train \
+    "${PYTHON_BIN}" "${CODE_ROOT}/stage5_macro_sufficiency_train.py" \
+    --input-root "${MAIN_INPUT_ROOT}" \
+    --checkpoint "${PRED_MODEL_ROOT}/best_model.pt" \
+    --output-root "${MACRO_ROOT}" \
+    --train-script "${CODE_ROOT}/train_event_ssl.py" \
+    --evaluate-script "${CODE_ROOT}/evaluate_event_ssl_structure.py" \
+    --train-split A_train \
+    --sample-max-rows "${MACRO_SAMPLE_MAX_ROWS}" \
+    --chunk-len "${CHUNK_LEN}" \
+    --ridge-alpha "${RIDGE_ALPHA}" \
+    --seed "${PROBE_SEED}" \
+    --torch-num-threads "${TORCH_NUM_THREADS}"
+fi
+require_file "${MACRO_ROOT}/metadata/stage5_macro_sufficiency_artifacts.pkl"
+if [[ "${FORCE}" == "1" || ! -f "${MACRO_EVAL_ROOT}/metadata/stage5_macro_sufficiency_evaluation_manifest.json" ]]; then
+  run_logged macro_suff_evaluate \
+    "${PYTHON_BIN}" "${CODE_ROOT}/stage5_macro_sufficiency_evaluate.py" \
+    --input-root "${MAIN_INPUT_ROOT}" \
+    --checkpoint "${PRED_MODEL_ROOT}/best_model.pt" \
+    --artifacts "${MACRO_ROOT}/metadata/stage5_macro_sufficiency_artifacts.pkl" \
+    --output-root "${MACRO_EVAL_ROOT}" \
+    --train-script "${CODE_ROOT}/train_event_ssl.py" \
+    --evaluate-script "${CODE_ROOT}/evaluate_event_ssl_structure.py" \
+    --stage1-root "${STAGE1_ROOT}" \
+    --splits A_val B_confirm \
+    --chunk-len "${CHUNK_LEN}" \
+    --seed "${EVAL_SEED}" \
+    --torch-num-threads "${TORCH_NUM_THREADS}"
+fi
+require_file "${MACRO_EVAL_ROOT}/metadata/stage5_macro_sufficiency_evaluation_manifest.json"
+mark_done macro_suff
