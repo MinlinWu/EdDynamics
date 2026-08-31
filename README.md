@@ -1,7 +1,5 @@
 # EdDynamics result reproduction
 
-The `s1`–`s5` directory prefixes are navigation labels. In contrast, `stage*` prefixes retained in code filenames and result directories denote the actual workflow order.
-
 Replace every `/path/to/...` placeholder before running a command.
 
 ## Layout
@@ -27,9 +25,14 @@ s4_cross_analysis/
 └── robustness/
 s5_supplementary/
 └── scripts/
+reference_outputs/
 ```
 
+The `s1`–`s5` directory prefixes are navigation labels. In contrast, `stage*` prefixes retained in code filenames and result directories denote the actual workflow order.
+
 `main/` contains primary experiments and downstream analyses, `robustness/` contains additional robustness workflows and audits, and `scripts/` contains result extraction and figure commands.
+
+See [reference outputs](reference_outputs/README.md) for core numeric reports and supplementary report-generation scripts.
 
 ## Dependency order
 
