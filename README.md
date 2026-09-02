@@ -1,5 +1,7 @@
 # EdDynamics result reproduction
 
+This repository accompanies the preprint *Reproducible macroscopic dynamics in a closed-loop human-AI learning system*, available at [https://doi.org/10.48550/arXiv.2608.30946](https://doi.org/10.48550/arXiv.2608.30946).
+
 Replace every `/path/to/...` placeholder before running a command.
 
 ## Layout
@@ -28,11 +30,11 @@ s5_supplementary/
 reference_outputs/
 ```
 
+See [reference outputs](reference_outputs/README.md) for core numeric reports and supplementary report-generation scripts.
+
 The `s1`–`s5` directory prefixes are navigation labels. In contrast, `stage*` prefixes retained in code filenames and result directories denote the actual workflow order.
 
 `main/` contains primary experiments and downstream analyses, `robustness/` contains additional robustness workflows and audits, and `scripts/` contains result extraction and figure commands.
-
-See [reference outputs](reference_outputs/README.md) for core numeric reports and supplementary report-generation scripts.
 
 ## Dependency order
 
