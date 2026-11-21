@@ -5,6 +5,8 @@ source_extraction_script: "s2_minimal_mechanism/scripts/extract_minimal_mechanis
 
 # Minimal mechanism numerical results
 
+The response-order and exposure-alignment columns refer to M and Ψ, respectively. In the source column, its “Figure 2 metric table” contains the mechanism field metrics for manuscript Figure 3. The “Figure 3 metric table” contains the kinetic metrics for manuscript Figure 4. See the [figure and table index](../reproducibility/Reproduction_index.md).
+
 ## Primary numerical ledger
 
 | category | metric | formatted_value | source |

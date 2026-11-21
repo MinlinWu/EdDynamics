@@ -1,0 +1,392 @@
+{
+  "purpose": "Original and corrected supplementary-table values obtained from saved experimental outputs. The corrections use the existing trained models and resampling draws.",
+  "source_archive_sha256": "448b530e8b7fed662b0bae34802e6805a6f71857c3a9e136f92c509ead384d0e",
+  "reporting_code": "s5_supplementary/scripts/statistical_closure/build_statistical_reports.py",
+  "tables": [
+    {
+      "table": 4,
+      "title": "Construction-aware and learner-cluster robustness of mesostate kinetics.",
+      "panel": "b. Primary K=6 statewise inference",
+      "method": "The limits are the 2.5th and 97.5th percentiles of 1,000 saved whole-learner multiplier draws. D10 is the 10-step survival excess over the state-matched geometric reference. RMST lift is the observed-to-geometric restricted mean residence time ratio at the state's reliable horizon.",
+      "generated_report": "residence_intervals_recalculated.csv",
+      "rows": [
+        {
+          "state": "S0",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [0.0163, 0.0203],
+          "after": [0.0163, 0.0204]
+        },
+        {
+          "state": "S0",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [1.0691, 1.2059],
+          "after": [1.0605, 1.1994]
+        },
+        {
+          "state": "S1",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [-0.0641, -0.0216],
+          "after": [-0.0644, -0.0236]
+        },
+        {
+          "state": "S1",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [1.9490, 2.1351],
+          "after": [1.9496, 2.1258]
+        },
+        {
+          "state": "S2",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [-0.2540, -0.1953],
+          "after": [-0.2529, -0.1979]
+        },
+        {
+          "state": "S2",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [1.7722, 1.9472],
+          "after": [1.7745, 1.9351]
+        },
+        {
+          "state": "S3",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [-0.4097, -0.3957],
+          "after": [-0.4091, -0.3964]
+        },
+        {
+          "state": "S3",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [6.0880, 6.8551],
+          "after": [6.0881, 6.8859]
+        },
+        {
+          "state": "S4",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [0.0169, 0.0298],
+          "after": [0.0169, 0.0296]
+        },
+        {
+          "state": "S4",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [1.2504, 1.3015],
+          "after": [1.2517, 1.3026]
+        },
+        {
+          "state": "S5",
+          "metric": "D10",
+          "input_metric": "tail_excess",
+          "before": [0.0288, 0.0332],
+          "after": [0.0288, 0.0331]
+        },
+        {
+          "state": "S5",
+          "metric": "RMST lift",
+          "input_metric": "rmst_lift",
+          "before": [1.1157, 1.1390],
+          "after": [1.1161, 1.1392]
+        }
+      ],
+      "separate_surrogate_tests": {
+        "panel": "a",
+        "recursive_surrogates": 100,
+        "monte_carlo_count_correction": 1
+      }
+    },
+    {
+      "table": 7,
+      "title": "Random-seed robustness of Event-SSL, controls and representation organisation.",
+      "seeds": [42, 2026, 666, 606, 37, 4669],
+      "method": "Each estimate is an arithmetic mean across six paired training seeds. Intervals use a two-sided 95% Student t distribution with 5 degrees of freedom. Retention is computed within each seed before aggregation.",
+      "field_correlation_contrast": {
+        "metric": "Full Event-SSL minus pure SSL learned-plane drift correlation",
+        "generated_reports": [
+          "pure_ssl_paired_seed_values.csv",
+          "pure_ssl_paired_seed_summary.csv"
+        ],
+        "before": {
+          "mean": 0.1113,
+          "sample_sd": 0.0904,
+          "seed_t_interval_95_percent": [0.0164, 0.2062],
+          "observed_range": [-0.0065, 0.2358],
+          "positive_pairs": 5,
+          "total_pairs": 6
+        },
+        "after": {
+          "mean": 0.163724,
+          "sample_sd": 0.041003,
+          "seed_t_interval_95_percent": [0.120695, 0.206754],
+          "observed_range": [0.120443, 0.235751],
+          "positive_pairs": 6,
+          "total_pairs": 6
+        }
+      },
+      "retention_rows": [
+        {
+          "metric": "Bottleneck overall retention",
+          "before": {
+            "mean": 0.9037,
+            "sample_sd": 0.0186,
+            "seed_t_interval_95_percent": [0.8842, 0.9232],
+            "observed_range": [0.8765, 0.9285]
+          },
+          "after": {
+            "mean": 0.9070,
+            "sample_sd": 0.0183,
+            "seed_t_interval_95_percent": [0.8878, 0.9262],
+            "observed_range": [0.8765, 0.9285]
+          }
+        },
+        {
+          "metric": "Bottleneck coordinate retention",
+          "before": {
+            "mean": 0.9954,
+            "sample_sd": 0.0005,
+            "seed_t_interval_95_percent": [0.9949, 0.9959],
+            "observed_range": [0.9946, 0.9960]
+          },
+          "after": {
+            "mean": 0.9954,
+            "sample_sd": 0.0005,
+            "seed_t_interval_95_percent": [0.9949, 0.9959],
+            "observed_range": [0.9946, 0.9959]
+          }
+        },
+        {
+          "metric": "Bottleneck closure retention",
+          "before": {
+            "mean": 0.7989,
+            "sample_sd": 0.0026,
+            "seed_t_interval_95_percent": [0.7962, 0.8017],
+            "observed_range": [0.7962, 0.8026]
+          },
+          "after": {
+            "mean": 0.7994,
+            "sample_sd": 0.0029,
+            "seed_t_interval_95_percent": [0.7964, 0.8024],
+            "observed_range": [0.7962, 0.8040]
+          }
+        },
+        {
+          "metric": "Bottleneck drift retention",
+          "before": {
+            "mean": 0.7958,
+            "sample_sd": 0.0698,
+            "seed_t_interval_95_percent": [0.7226, 0.8690],
+            "observed_range": [0.6961, 0.8849]
+          },
+          "after": {
+            "mean": 0.8079,
+            "sample_sd": 0.0680,
+            "seed_t_interval_95_percent": [0.7365, 0.8793],
+            "observed_range": [0.6961, 0.8849]
+          }
+        },
+        {
+          "metric": "Bottleneck transition retention",
+          "before": {
+            "mean": 0.9991,
+            "sample_sd": 0.0037,
+            "seed_t_interval_95_percent": [0.9952, 1.0031],
+            "observed_range": [0.9942, 1.0036]
+          },
+          "after": {
+            "mean": 0.9994,
+            "sample_sd": 0.0037,
+            "seed_t_interval_95_percent": [0.9956, 1.0033],
+            "observed_range": [0.9942, 1.0036]
+          }
+        },
+        {
+          "metric": "Bottleneck response-task retention",
+          "before": {
+            "mean": 0.9342,
+            "sample_sd": 0.0196,
+            "seed_t_interval_95_percent": [0.9136, 0.9547],
+            "observed_range": [0.9168, 0.9685]
+          },
+          "after": {
+            "mean": 0.9343,
+            "sample_sd": 0.0197,
+            "seed_t_interval_95_percent": [0.9137, 0.9550],
+            "observed_range": [0.9168, 0.9685]
+          }
+        },
+        {
+          "metric": "Residual-hidden overall retention",
+          "before": {
+            "mean": 0.5998,
+            "sample_sd": 0.0074,
+            "seed_t_interval_95_percent": [0.5921, 0.6075],
+            "observed_range": [0.5928, 0.6109]
+          },
+          "after": {
+            "mean": 0.5980,
+            "sample_sd": 0.0067,
+            "seed_t_interval_95_percent": [0.5910, 0.6051],
+            "observed_range": [0.5928, 0.6109]
+          }
+        },
+        {
+          "metric": "Residual-hidden response-task retention",
+          "before": {
+            "mean": 0.9436,
+            "sample_sd": 0.0322,
+            "seed_t_interval_95_percent": [0.9097, 0.9774],
+            "observed_range": [0.9047, 0.9958]
+          },
+          "after": {
+            "mean": 0.9438,
+            "sample_sd": 0.0323,
+            "seed_t_interval_95_percent": [0.9098, 0.9777],
+            "observed_range": [0.9047, 0.9958]
+          }
+        }
+      ],
+      "retention_verification_records": [
+        "table7_initial_comparison.json",
+        "table7_original_scoring_check.json",
+        "table7_retention_source_check.json"
+      ],
+      "context": {
+        "full_minus_task_only_positive_pairs": {
+          "before": 6,
+          "after": 6,
+          "total": 6
+        },
+        "full_model_statewise_self_transition_correlation": {
+          "seed_42": 0.8462,
+          "six_seed_mean": 0.7032,
+          "six_seed_range": [0.6263, 0.8462]
+        },
+        "seed_42_overall_retention_percent": {
+          "bottleneck": 90.8,
+          "residual_hidden": 59.7
+        },
+        "seed_42_pure_ssl_learned_plane_drift_correlation": 0.520447,
+        "shuffled_to_ordered_transfer": "The six individual evaluations on ordered inputs reproduce the published time-shuffle statistics. The aggregate table contains a discrepant seed-42 entry."
+      }
+    },
+    {
+      "table": 8,
+      "title": "Hidden-state geometry, composite-score sensitivity and state-only closure diagnostics.",
+      "panel": "e. Hidden-state geometry in objective-control representations",
+      "representation": "Pure SSL (future-prediction-only encoder)",
+      "method": "Means and sample standard deviations across the six confirmation runs. For the leading-PC columns, the two coordinate-associated principal components were selected among the first 16 in the training cohort.",
+      "generated_reports": [
+        "geometry_metrics_by_seed.csv",
+        "geometry_seed_summary.csv"
+      ],
+      "rows": [
+        {
+          "metric": "First canonical correlation (r1)",
+          "before": {
+            "mean": 0.9298,
+            "sample_sd": 0.0039
+          },
+          "after": {
+            "mean": 0.931607,
+            "sample_sd": 0.004481
+          }
+        },
+        {
+          "metric": "Second canonical correlation (r2)",
+          "before": {
+            "mean": 0.8165,
+            "sample_sd": 0.0048
+          },
+          "after": {
+            "mean": 0.818539,
+            "sample_sd": 0.004879
+          }
+        },
+        {
+          "metric": "Leading-PC absolute correlation with M",
+          "before": {
+            "mean": 0.4139,
+            "sample_sd": 0.0493
+          },
+          "after": {
+            "mean": 0.396157,
+            "sample_sd": 0.049535
+          }
+        },
+        {
+          "metric": "Leading-PC absolute correlation with exposure alignment (Psi)",
+          "before": {
+            "mean": 0.5867,
+            "sample_sd": 0.0287
+          },
+          "after": {
+            "mean": 0.591207,
+            "sample_sd": 0.029432
+          }
+        }
+      ],
+      "rounded_second_canonical_correlation_in_text": {
+        "model_order": [
+          "Pure SSL",
+          "Task-only"
+        ],
+        "before": [0.817, 0.810],
+        "after": [0.819, 0.810]
+      },
+      "direct_linear_readout_correlations": {
+        "scope": "Six-run confirmation means and sample standard deviations for supervised readouts fitted after freezing each encoder.",
+        "pure_ssl": {
+          "M": {
+            "mean": 0.8199,
+            "sample_sd": 0.0043
+          },
+          "Psi": {
+            "mean": 0.9315,
+            "sample_sd": 0.0048
+          }
+        },
+        "task_only": {
+          "M": {
+            "mean": 0.8178,
+            "sample_sd": 0.0025
+          },
+          "Psi": {
+            "mean": 0.8646,
+            "sample_sd": 0.0084
+          }
+        }
+      },
+      "seed_42_nonlinear_readout_gains": {
+        "representation": "Pure SSL",
+        "M": 0.0405,
+        "Psi": 0.0268
+      }
+    },
+    {
+      "table": 11,
+      "title": "Paired learner-cluster bootstrap uncertainty for frozen field and transition summaries.",
+      "panel": "a. Frozen field summaries",
+      "comparison": "Mechanism vs Event-SSL anchor",
+      "metric": "Occupancy-weighted local cosine (c_w)",
+      "before": {
+        "point": 0.7851,
+        "fixed_support_nominal_95_percent_interval": [0.7774, 0.7928],
+        "support_reselected_95_percent_interval": [0.7757, 0.7911]
+      },
+      "after": {
+        "point": 0.7851,
+        "fixed_support_nominal_95_percent_interval": [0.7773, 0.7928],
+        "support_reselected_95_percent_interval": [0.7757, 0.7911]
+      },
+      "raw_fixed_support_lower_limit": 0.7773499502396988,
+      "reported_decimal_places": 4,
+      "source_record": "table11a_interval_rounding.json"
+    }
+  ]
+}

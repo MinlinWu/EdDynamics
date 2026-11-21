@@ -1,0 +1,262 @@
+{
+  "method": "Execute exact original extractor score functions on six original B_confirm CSVs, then ratio within seed and mean/sample SD/df5 Student-t across seeds",
+  "source_code": "EdDynamics/s3_event_ssl/scripts/extract_event_ssl_random_seed_statistics.py",
+  "source_code_sha256": "cdb1c394a311b113c86e96dad3a95cab0ebc7f7f0d5a99d8e52fbddaf7130656",
+  "sources": [
+    {
+      "path": "outputs_KT4/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "7146831461c727661b5703c6a0d378ad83ce65b006b525b26bfad65e4d5cd3c2"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_2026/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "4cd17aee5ddc1d655476c06e8dfecdbb5c2cbb0d97492625db4d3474554b31c7"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_666/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "97292fbb8e8f79a8bc299971c483668f444f96d3148fd3b51db14b216fb44271"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_606/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "d782be10f2418e3e79d4e44c6b066d67faf4b9f6a6769c632696f5cf8d43a383"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_37/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "a3ff5797059e23404112089a224e8c2a6b0151a3fd10adaf49c92b1de9c602cf"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_4669/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "c86bcedb0dbc7339759206b83032ca23bb00e475dc313018debc0f996fea8c4b"
+    }
+  ],
+  "rows": [
+    {
+      "seed": 42,
+      "bottleneck_overall": 0.9083638293733848,
+      "bottleneck_coordinate": 0.9953178520192352,
+      "bottleneck_closure": 0.7987504286257138,
+      "bottleneck_drift": 0.8103188949960854,
+      "bottleneck_transition": 1.0025415157009374,
+      "bottleneck_task": 0.9169341029035347,
+      "residual_overall": 0.597320115333871,
+      "residual_task": 0.9154505565136479
+    },
+    {
+      "seed": 2026,
+      "bottleneck_overall": 0.9213648215666719,
+      "bottleneck_coordinate": 0.9945507714040662,
+      "bottleneck_closure": 0.7981453206277702,
+      "bottleneck_drift": 0.869228139237775,
+      "bottleneck_transition": 0.9960447069111843,
+      "bottleneck_task": 0.9273484417228482,
+      "residual_overall": 0.5985204469322348,
+      "residual_task": 0.9046778518608259
+    },
+    {
+      "seed": 666,
+      "bottleneck_overall": 0.876525001315535,
+      "bottleneck_coordinate": 0.9955482092392925,
+      "bottleneck_closure": 0.7976514275876405,
+      "bottleneck_drift": 0.696058336183307,
+      "bottleneck_transition": 0.9942254035051128,
+      "bottleneck_task": 0.9684690248919668,
+      "residual_overall": 0.5928397547154353,
+      "residual_task": 0.9957998447445411
+    },
+    {
+      "seed": 606,
+      "bottleneck_overall": 0.8985589338460601,
+      "bottleneck_coordinate": 0.9952052499846215,
+      "bottleneck_closure": 0.7961927466455201,
+      "bottleneck_drift": 0.7773077563142659,
+      "bottleneck_transition": 1.0003265695765216,
+      "bottleneck_task": 0.9168374257338162,
+      "residual_overall": 0.6108749404796148,
+      "residual_task": 0.9417549872361143
+    },
+    {
+      "seed": 37,
+      "bottleneck_overall": 0.9285033307853214,
+      "bottleneck_coordinate": 0.9957417542401897,
+      "bottleneck_closure": 0.8015633491554183,
+      "bottleneck_drift": 0.8849143819294295,
+      "bottleneck_transition": 1.0036180973328286,
+      "bottleneck_task": 0.9317144823772472,
+      "residual_overall": 0.5928486175570605,
+      "residual_task": 0.9483220310731019
+    },
+    {
+      "seed": 4669,
+      "bottleneck_overall": 0.9085591432866902,
+      "bottleneck_coordinate": 0.99587535244719,
+      "bottleneck_closure": 0.803959685496357,
+      "bottleneck_drift": 0.8093673919452495,
+      "bottleneck_transition": 0.9998617498807016,
+      "bottleneck_task": 0.9447758607761859,
+      "residual_overall": 0.5957504353580408,
+      "residual_task": 0.956546569603779
+    }
+  ],
+  "checks": [
+    {
+      "metric": "bottleneck_overall",
+      "raw_summary": [
+        0.9069791766956106,
+        0.01829211214062887,
+        0.8877827822862607,
+        0.9261755711049604,
+        0.876525001315535,
+        0.9285033307853214
+      ],
+      "rounded": [
+        "0.9070",
+        "0.0183",
+        "0.8878",
+        "0.9262",
+        "0.8765",
+        "0.9285"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "bottleneck_coordinate",
+      "raw_summary": [
+        0.9953731982224325,
+        0.000474610776120726,
+        0.9948751247588927,
+        0.9958712716859723,
+        0.9945507714040662,
+        0.99587535244719
+      ],
+      "rounded": [
+        "0.9954",
+        "0.0005",
+        "0.9949",
+        "0.9959",
+        "0.9946",
+        "0.9959"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "bottleneck_closure",
+      "raw_summary": [
+        0.7993771596897367,
+        0.0028568452591548605,
+        0.7963790844571117,
+        0.8023752349223616,
+        0.7961927466455201,
+        0.803959685496357
+      ],
+      "rounded": [
+        "0.7994",
+        "0.0029",
+        "0.7964",
+        "0.8024",
+        "0.7962",
+        "0.8040"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "bottleneck_drift",
+      "raw_summary": [
+        0.8078658167676854,
+        0.06803645509065902,
+        0.7364659359833655,
+        0.8792656975520053,
+        0.696058336183307,
+        0.8849143819294295
+      ],
+      "rounded": [
+        "0.8079",
+        "0.0680",
+        "0.7365",
+        "0.8793",
+        "0.6961",
+        "0.8849"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "bottleneck_transition",
+      "raw_summary": [
+        0.9994363404845477,
+        0.0036540313888297577,
+        0.9956016697158111,
+        1.003271011253284,
+        0.9942254035051128,
+        1.0036180973328286
+      ],
+      "rounded": [
+        "0.9994",
+        "0.0037",
+        "0.9956",
+        "1.0033",
+        "0.9942",
+        "1.0036"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "bottleneck_task",
+      "raw_summary": [
+        0.9343465564009332,
+        0.01969151015998662,
+        0.9136815838356694,
+        0.955011528966197,
+        0.9168374257338162,
+        0.9684690248919668
+      ],
+      "rounded": [
+        "0.9343",
+        "0.0197",
+        "0.9137",
+        "0.9550",
+        "0.9168",
+        "0.9685"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "residual_overall",
+      "raw_summary": [
+        0.5980257183960429,
+        0.006704008434592149,
+        0.5909902930146187,
+        0.6050611437774671,
+        0.5928397547154353,
+        0.6108749404796148
+      ],
+      "rounded": [
+        "0.5980",
+        "0.0067",
+        "0.5910",
+        "0.6051",
+        "0.5928",
+        "0.6109"
+      ],
+      "matches_independent_recomputation": true
+    },
+    {
+      "metric": "residual_task",
+      "raw_summary": [
+        0.9437586401720017,
+        0.032327427641394645,
+        0.9098330854589637,
+        0.9776841948850398,
+        0.9046778518608259,
+        0.9957998447445411
+      ],
+      "rounded": [
+        "0.9438",
+        "0.0323",
+        "0.9098",
+        "0.9777",
+        "0.9047",
+        "0.9958"
+      ],
+      "matches_independent_recomputation": true
+    }
+  ],
+  "all_agree": true
+}

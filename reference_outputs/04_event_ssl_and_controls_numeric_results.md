@@ -9,8 +9,8 @@ source_extraction_script: "s3_event_ssl/scripts/extract_event_ssl_stage4_publica
 
 | category | model_label | split | metric | value | source |
 | --- | --- | --- | --- | --- | --- |
-| main model confirmation | predictive_state_event_ssl | B_confirm | Confirmation intervals | nan | predictive-state B_confirm structural metrics |
-| main model confirmation | predictive_state_event_ssl | B_confirm | Confirmation users | nan | predictive-state B_confirm structural metrics |
+| main model confirmation | predictive_state_event_ssl | B_confirm | Confirmation intervals | 3233208 | predictive-state evaluation manifest, `splits.B_confirm.rows` |
+| main model confirmation | predictive_state_event_ssl | B_confirm | Confirmation users | 56195 | predictive-state evaluation manifest, `splits.B_confirm.users` |
 | main model confirmation | predictive_state_event_ssl | B_confirm | Coordinate correlation M | 0.883671 | predictive-state B_confirm structural metrics |
 | main model confirmation | predictive_state_event_ssl | B_confirm | Coordinate correlation Psi | 0.990493 | predictive-state B_confirm structural metrics |
 | main model confirmation | predictive_state_event_ssl | B_confirm | Coordinate RMSE M | 0.162192 | predictive-state B_confirm structural metrics |

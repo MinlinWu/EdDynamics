@@ -1,0 +1,195 @@
+{
+  "original_extractor": "EdDynamics/s3_event_ssl/scripts/extract_event_ssl_random_seed_statistics.py",
+  "source_sha256": "cdb1c394a311b113c86e96dad3a95cab0ebc7f7f0d5a99d8e52fbddaf7130656",
+  "per_seed": [
+    {
+      "seed": 42,
+      "macro_coordinate_score": 0.9953178520192353,
+      "residual_coordinate_score": 0.5586121944327762,
+      "macro_closure_score": 0.798750428625714,
+      "residual_closure_score": 0.49943778418012297,
+      "macro_drift_score": 0.8103188949960854,
+      "residual_drift_score": 0.8021085716737043,
+      "macro_transition_score": 1.0025415157009376,
+      "residual_transition_score": 0.517981117055883,
+      "macro_task_score": 0.9169341029035347,
+      "residual_task_score": 0.9154505565136479,
+      "macro_macrostructure_composite_descriptive": 0.908363829373385,
+      "residual_macrostructure_composite_descriptive": 0.597320115333871
+    },
+    {
+      "seed": 2026,
+      "macro_coordinate_score": 0.9945507714040663,
+      "residual_coordinate_score": 0.5634802397342952,
+      "macro_closure_score": 0.7981453206277702,
+      "residual_closure_score": 0.5011515867671383,
+      "macro_drift_score": 0.869228139237775,
+      "residual_drift_score": 0.7791170958413896,
+      "macro_transition_score": 0.9960447069111843,
+      "residual_transition_score": 0.5370790209067515,
+      "macro_task_score": 0.9273484417228482,
+      "residual_task_score": 0.9046778518608259,
+      "macro_macrostructure_composite_descriptive": 0.9213648215666718,
+      "residual_macrostructure_composite_descriptive": 0.5985204469322347
+    },
+    {
+      "seed": 666,
+      "macro_coordinate_score": 0.9955482092392927,
+      "residual_coordinate_score": 0.566322833916836,
+      "macro_closure_score": 0.7976514275876404,
+      "residual_closure_score": 0.49682536425954754,
+      "macro_drift_score": 0.696058336183307,
+      "residual_drift_score": 0.7810604668748238,
+      "macro_transition_score": 0.9942254035051128,
+      "residual_transition_score": 0.5142285552931385,
+      "macro_task_score": 0.9684690248919668,
+      "residual_task_score": 0.9957998447445411,
+      "macro_macrostructure_composite_descriptive": 0.876525001315535,
+      "residual_macrostructure_composite_descriptive": 0.5928397547154353
+    },
+    {
+      "seed": 606,
+      "macro_coordinate_score": 0.9952052499846215,
+      "residual_coordinate_score": 0.5642528676070064,
+      "macro_closure_score": 0.7961927466455201,
+      "residual_closure_score": 0.49738482715882565,
+      "macro_drift_score": 0.7773077563142659,
+      "residual_drift_score": 0.8245584816500322,
+      "macro_transition_score": 1.0003265695765216,
+      "residual_transition_score": 0.5439369252991854,
+      "macro_task_score": 0.9168374257338162,
+      "residual_task_score": 0.9417549872361143,
+      "macro_macrostructure_composite_descriptive": 0.8985589338460601,
+      "residual_macrostructure_composite_descriptive": 0.6108749404796148
+    },
+    {
+      "seed": 37,
+      "macro_coordinate_score": 0.9957417542401898,
+      "residual_coordinate_score": 0.5527008529624933,
+      "macro_closure_score": 0.801563349155418,
+      "residual_closure_score": 0.5002884157341704,
+      "macro_drift_score": 0.8849143819294295,
+      "residual_drift_score": 0.7945954264281586,
+      "macro_transition_score": 1.0036180973328286,
+      "residual_transition_score": 0.5129862505902044,
+      "macro_task_score": 0.9317144823772472,
+      "residual_task_score": 0.9483220310731019,
+      "macro_macrostructure_composite_descriptive": 0.9285033307853213,
+      "residual_macrostructure_composite_descriptive": 0.5928486175570605
+    },
+    {
+      "seed": 4669,
+      "macro_coordinate_score": 0.99587535244719,
+      "residual_coordinate_score": 0.5524144807067338,
+      "macro_closure_score": 0.8039596854963569,
+      "residual_closure_score": 0.5012460712158985,
+      "macro_drift_score": 0.8093673919452495,
+      "residual_drift_score": 0.8082681730987364,
+      "macro_transition_score": 0.9998617498807016,
+      "residual_transition_score": 0.5087430076735282,
+      "macro_task_score": 0.9447758607761859,
+      "residual_task_score": 0.956546569603779,
+      "macro_macrostructure_composite_descriptive": 0.90855914328669,
+      "residual_macrostructure_composite_descriptive": 0.5957504353580407
+    }
+  ],
+  "summary": {
+    "macro_coordinate_score": {
+      "mean": 0.9953731982224326,
+      "sd": 0.0004746107761207104,
+      "ci_low": 0.9948751247588928,
+      "ci_high": 0.9958712716859724,
+      "min": 0.9945507714040663,
+      "max": 0.99587535244719
+    },
+    "residual_coordinate_score": {
+      "mean": 0.5596305782266902,
+      "sd": 0.006034931652757721,
+      "ci_low": 0.5532973058659498,
+      "ci_high": 0.5659638505874305,
+      "min": 0.5524144807067338,
+      "max": 0.566322833916836
+    },
+    "macro_closure_score": {
+      "mean": 0.7993771596897365,
+      "sd": 0.0028568452591547946,
+      "ci_low": 0.7963790844571116,
+      "ci_high": 0.8023752349223615,
+      "min": 0.7961927466455201,
+      "max": 0.8039596854963569
+    },
+    "residual_closure_score": {
+      "mean": 0.4993890082192839,
+      "sd": 0.0018950298761937288,
+      "ci_low": 0.4974002963285385,
+      "ci_high": 0.5013777201100292,
+      "min": 0.49682536425954754,
+      "max": 0.5012460712158985
+    },
+    "macro_drift_score": {
+      "mean": 0.8078658167676854,
+      "sd": 0.06803645509065902,
+      "ci_low": 0.7364659359833653,
+      "ci_high": 0.8792656975520056,
+      "min": 0.696058336183307,
+      "max": 0.8849143819294295
+    },
+    "residual_drift_score": {
+      "mean": 0.7982847025944741,
+      "sd": 0.01721792860539947,
+      "ci_low": 0.7802155946707834,
+      "ci_high": 0.8163538105181649,
+      "min": 0.7791170958413896,
+      "max": 0.8245584816500322
+    },
+    "macro_transition_score": {
+      "mean": 0.9994363404845478,
+      "sd": 0.0036540313888297955,
+      "ci_low": 0.9956016697158112,
+      "ci_high": 1.0032710112532843,
+      "min": 0.9942254035051128,
+      "max": 1.0036180973328286
+    },
+    "residual_transition_score": {
+      "mean": 0.5224924794697818,
+      "sd": 0.014427006923380824,
+      "ci_low": 0.5073522642273599,
+      "ci_high": 0.5376326947122038,
+      "min": 0.5087430076735282,
+      "max": 0.5439369252991854
+    },
+    "macro_task_score": {
+      "mean": 0.9343465564009332,
+      "sd": 0.01969151015998662,
+      "ci_low": 0.9136815838356694,
+      "ci_high": 0.955011528966197,
+      "min": 0.9168374257338162,
+      "max": 0.9684690248919668
+    },
+    "residual_task_score": {
+      "mean": 0.9437586401720017,
+      "sd": 0.032327427641394645,
+      "ci_low": 0.9098330854589636,
+      "ci_high": 0.9776841948850399,
+      "min": 0.9046778518608259,
+      "max": 0.9957998447445411
+    },
+    "macro_macrostructure_composite_descriptive": {
+      "mean": 0.9069791766956106,
+      "sd": 0.018292112140628824,
+      "ci_low": 0.8877827822862606,
+      "ci_high": 0.9261755711049605,
+      "min": 0.876525001315535,
+      "max": 0.9285033307853213
+    },
+    "residual_macrostructure_composite_descriptive": {
+      "mean": 0.5980257183960428,
+      "sd": 0.006704008434592155,
+      "ci_low": 0.5909902930146185,
+      "ci_high": 0.6050611437774671,
+      "min": 0.5928397547154353,
+      "max": 0.6108749404796148
+    }
+  },
+  "source_format_comparison": []
+}

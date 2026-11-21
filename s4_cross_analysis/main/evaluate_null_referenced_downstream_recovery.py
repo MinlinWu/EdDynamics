@@ -3018,7 +3018,7 @@ def main() -> None:
             "per-coordinate rescaled-scaffold benchmark is a stronger secondary specificity check."
         ),
         "inference_boundary": (
-            "This is a post-freeze reviewer-motivated secondary analysis. B_confirm remains "
+            "This secondary analysis was specified post hoc after model freezing. B_confirm remains "
             "held out from model fitting and is output-only, but the derived analysis itself "
             "is not described as preregistered."
         ),

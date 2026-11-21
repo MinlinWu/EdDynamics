@@ -1,0 +1,1279 @@
+{
+  "schema_version": 2,
+  "original_repository_commit": "aa4a02b5ba980a1c1a81876aa56c1618dded1065",
+  "scope": "Supplementary computational sources, validation support, documentation and derived numerical reporting",
+  "archive_correspondence": "Each files[].sha256 identifies the public file at files[].path, relative to the repository root. archived_source_binding identifies its archived source or supporting record where available. A verified historical hash describes the archived copy.",
+  "public_adaptation": "Public documentation, file names, launcher interfaces and display text may differ from the recorded runs. Archived run contracts preserve their original source digests.",
+  "archive_locations": "Paths beginning with archives/ are identifiers for external preserved execution records. They are not paths inside this repository.",
+  "role_definitions": {
+    "numerical_implementation": "Scientific calculation, evaluation or training implementation.",
+    "execution_entry_or_launcher": "Workflow entry or scheduling interface; alternatives can share the same numerical implementation.",
+    "numerical_reporting": "Aggregation, numerical reports or scientific figures.",
+    "validation_support": "Tests and synthetic fixtures; not scientific result-generating entries.",
+    "derived_statistical_reporting": "New reporting derivation verified against preserved numerical outputs.",
+    "configuration_or_dependency": "Settings, source identities, compatibility records or environment requirements.",
+    "documentation": "Instructions and scientific definitions; not executed scientific code.",
+    "numerical_verification_record": "Numerical checks of preserved results or corrections to previously reported summaries.",
+    "numerical_reference_report": "Reference values extracted from empirical model or control outputs."
+  },
+  "statistical_reporting_sources": [
+    "preserved field and transition bootstrap summaries",
+    "saved residence multiplier draws",
+    "six-seed objective-control and geometry summaries"
+  ],
+  "archived_module_bindings": {
+    "construction": {
+      "protocol": "archives/outputs_KT4/construction_null_generative_revision_v3/protocol.json",
+      "code_hashes": {
+        "cn_common.py": "46aa7741bb811a4410057a521b180af687c8a1f94af7fa9f3fddad9d65134fab",
+        "run_generative_construction_null.py": "aaa6ef921f0e08ee376d6118083968f10ea5fca2b6a39c5a1281e527055f5a7e",
+        "submit_construction_null.py": "a718641d45c68146be08d1595ba77b67a3b459236df3944cbe04bb5ebfe9ce33",
+        "summarize_generative_construction_null.py": "b7b83a72e1741e1b9901de9519d4f9aa6ed935eeb2ac0a05e4ef0ce42639eb4c"
+      },
+      "final_same_protocol": true
+    },
+    "fourterm": {
+      "contract": "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+      "combined_digest": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+      "files_in_digest": {
+        "FINAL_PROTOCOL.md": "6b5e8c67cde077aa77fb00d022a606bdf32172c7527bff3bc6d1f8eccef6e81b",
+        "ft_common.py": "ad5644d7e6a5c09f9a1acbeb20bf285bfbe343b87a875ca05d28a3184ab27d5e",
+        "ft_data.py": "72f1b214f9cf951c06dd2c3be66ebd958c678657e708c8235ded99ea52798d0a",
+        "ft_models.py": "c9353429252ad09ccfb81c5944ca132fe23b41652b156a3596aa7b1becf12a4a",
+        "ft_pipeline.py": "895e6bf28d4edec896fccc40b5b29da25cc1b096752b7b8cea2c55d7ec32f6f5",
+        "ft_reporting.py": "42d0cf3120b19a3c001685aaa784a40cd3e5ea5e7f6cd55df778a6fb3ff738ae",
+        "ft_statistics.py": "b204a180650fb01ab6f10289dc539ec933d2c89ebd80d1260ab9df88a783b925",
+        "run_direct.sh": "f50f60b9e1a95f4c13892047d45e07bc15cf65952e912bdaabe26da0b55b222e",
+        "run_fourterm.py": "ea0db9cfcc6d2c06e4201c8df945d4c30d6b836a152d26f1bdc4498e7b205f65",
+        "source_contract.json": "2b5ba2fd2e8fbd946207161afddb2e09e0feeb4d12d2371ce207f0da9cf95dcc"
+      },
+      "final_same_run_hash": true
+    },
+    "ssl_cpu": {
+      "combined_digest": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+      "files_in_digest": {
+        "protocol.json": "92f1e56f4dfe6ff14591ebac1ac503ceb19af09ef51f61f19843c7ed106880ae",
+        "run_direct.sh": "0ddc3f1b06c2ff75a406029387b941c0c17647ce82cf9a8d6ca1c7d6f60b4a31",
+        "run_ssl.py": "cdd22b72b0c430c6462e4a1fc46aca207d31998e5a9cc05dfba38ddf89156b5e",
+        "source_contract.json": "f4ec9d8450267d734bda9226ecf099e9b26b812976a8a2fa6d6e81f4e8ff7d92",
+        "ssl_common.py": "1319e14ebff146d33f0eb7d73fe4050d5a021413a62223dea7b9ed3ed91286cc",
+        "ssl_data.py": "8e92d1f188fbeef1afc10aa7dae27b9dd5a35c4062d3eb83b28ab4ccaf7e9af4",
+        "ssl_neural.py": "f599f6e07770c2f5f74c87aab04c94d8d58f13c3cfb0f07722c699d6d84416e1",
+        "ssl_pipeline.py": "92250e225db278b3866211f9a935f84fa062acce8fc07f90e60db0c5d359bfff",
+        "ssl_reporting.py": "828ccb95c416027d034b999e7dba17655f1e8bf5d98d730074243241b665b596",
+        "ssl_statistics.py": "4d3f2d8658935a65c4cb8fdaf4d218de011a713080c5c216d6f6b66fd848eff0",
+        "vendor/evaluate_event_ssl_structure.py": "0a65508c42634098160aaf497cd7e82711b5a309ff5fba94fd831c5042d7db52",
+        "vendor/prepare_event_ssl_inputs.py": "acbf225469be6b33b0c5e718182e28f245c7387bdfc35f615eec2480ed0c744f",
+        "vendor/train_event_ssl.py": "1357dcd70fd3dacfbef6ec8dc4d8b2444de8c4e1452fa5028b20da46164d9044"
+      },
+      "contract": "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+      "S0_matches": true
+    },
+    "ssl_gpu": {
+      "final_contract": "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+      "scripts": {
+        "dispatch_s3.py": "63b0e162fba89004976df59c4ba5c55774cc7ed3f7678ba7f4099a2d720c7fac",
+        "train_gpu.py": "866d5950874bc443157d1a3ab245b123347c213b4f1b88250c2f6bba43d2133b",
+        "eval_cpu.py": "8a24f8a5ace159a5ade48fb65cbd77765338a80f8874a91545246156d415f05b",
+        "finalize_six.py": "fd1a41722573dafdf5255b037cdb5ee53b7ea79a6a484e186dca9f8fc7ebd22b",
+        "slurm_s3.py": "8d9909156c0c7763ab47fe4cdcc2b156ecb6f2a2bf80135f7acd321b2a4721a4",
+        "slurm_s3.sbatch": "9bf72d9fc78e7d02db457b8dc257265fc4a0870dc5297d22e467ea678d00448a"
+      }
+    },
+    "common_reference": {
+      "formal_completion": "archives/common_reference/formal/COMPLETE.json",
+      "presentation_completion": "archives/common_reference/presentation/PRESENTATION_COMPLETE.json",
+      "scripts": {
+        "launch_excess.py": "a63612651a14a8879a9c6424067d0401e9755c1665ffc4b6524d87671d406831",
+        "p1_reports.py": "e81302b03900e3df396b003a4c9cc3abaf985b15d5e7c705195530f80e3e8dc9",
+        "run_excess.py": "17054a2c6b71266161f48788d157889370656707bcdafebd240d6cee54a43bf9",
+        "presentation_figures.py": "c7206502fca48f4fe2e0424ffd770bd3696e511cea8baa743d3b9c0958b11fb6"
+      }
+    }
+  },
+  "self_excluded": "supplementary_source_manifest.json",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e7993eab4b8e597de5aac1a420e488cb65959b55e8378485409e1dd87ce538bd",
+      "role": "documentation",
+      "analysis": "root_metadata",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "SUPPLEMENTARY_ANALYSES.md",
+      "sha256": "cd117a492cd12d0b8ad0dcf3c25cf981392173d4cc041bb8e8b97ede44d483bf",
+      "role": "documentation",
+      "analysis": "root_metadata",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "reference_outputs/04_event_ssl_and_controls_numeric_results.md",
+      "sha256": "1b93edc7bb1f2b63735c61ff86825939a6f8f6fa500062bd27f126ac886bbce9",
+      "role": "numerical_reference_report",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reference_outputs/README.md",
+      "sha256": "77c42898355cdf85a8eacbd24690ab147b6a2a7ff2d54314742b7a080a1dc295",
+      "role": "documentation",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/Numerical_correction_record.json",
+      "sha256": "0b8972db139171659bce1d6349a3987837f7ad598e8508c7aea5e49c20016b9b",
+      "role": "numerical_verification_record",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/Numerical_source_records.md",
+      "sha256": "dda2718fb19b817d0232d3d9ade27a82cd9f40f6df39a52db24f240f714eb218",
+      "role": "documentation",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/Reproduction_index.md",
+      "sha256": "a05756baedf6c31ebf2f687885b2c14cdddc8a1c2f43cca4a130c1357a613e3c",
+      "role": "documentation",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/table11a_interval_rounding.json",
+      "sha256": "7e1eaf60748f2b49ce5421a792bffa7ae2f6ec44170dcecaf7a18b8a345823ef",
+      "role": "numerical_verification_record",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/table7_initial_comparison.json",
+      "sha256": "ead97ad3e420437cfcffd324cbb501818d95b71b945f8823382213f91e5594fd",
+      "role": "numerical_verification_record",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/table7_original_scoring_check.json",
+      "sha256": "88af93c8bb1bfe0eec8faa30357763fd1f80e761b25f408efd9a1ae6f4ef8831",
+      "role": "numerical_verification_record",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "reproducibility/table7_retention_source_check.json",
+      "sha256": "24387651b48f2612a2304c951f3436511ec9108f3619aa64070d7c1d1ff23afa",
+      "role": "numerical_verification_record",
+      "analysis": "reproduction_records",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/README.md",
+      "sha256": "21b522d46ba9394432dfad6bf1344baf2c380c9f351f6c168d8f5f47a11b4683",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/README.md",
+      "sha256": "f1e7c8ad7dd1357213a7143fbffd613422314ed0ff127d1a432f88cebcbf124a",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/README.md",
+      "sha256": "9fa974ef54e38548d8bfbec765cb5b95b5ddc5dcbffddad630b426b89f81d3f6",
+      "role": "documentation",
+      "analysis": "construction_control",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/cn_common.py",
+      "sha256": "cb0519a84b92e043ea92355cd9e8536d02dafa62422fd3da06f00e90a7a28088",
+      "role": "numerical_implementation",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/cn_common.py",
+      "snapshot_source_sha256": "46aa7741bb811a4410057a521b180af687c8a1f94af7fa9f3fddad9d65134fab",
+      "archived_source_binding": {
+        "status": "frozen_protocol_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/construction_null_generative_revision_v3/protocol.json",
+          "archives/outputs_KT4/construction_null_generative_revision_v3/final/COMPLETE.json"
+        ],
+        "expected_source_sha256": "46aa7741bb811a4410057a521b180af687c8a1f94af7fa9f3fddad9d65134fab",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/execution_tools/run_direct_cpu.py",
+      "sha256": "78332a7b518beea41511fc96868313f86aebab3fea39a2d5b9fa25ac92e2c117",
+      "role": "execution_entry_or_launcher",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/execution_tools/run_direct_cpu.py",
+      "snapshot_source_sha256": "e98d08cd2409ef5d294dd9a4ebcb433c2964ce2e01d1eba7e01b1dedd51a1ba5",
+      "archived_source_binding": {
+        "status": "prelaunch_deployment_hash_bound",
+        "evidence": [
+          "archives/construction_control/deployment_manifest.json",
+          "archives/construction_control/launch_formal.json"
+        ],
+        "expected_source_sha256": "e98d08cd2409ef5d294dd9a4ebcb433c2964ce2e01d1eba7e01b1dedd51a1ba5",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/requirements.txt",
+      "sha256": "ae856fc9c94909fac7d7fef4af0a6c11def5d0a97d4f6f5e7edd37e92cdd894a",
+      "role": "configuration_or_dependency",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/requirements.txt",
+      "snapshot_source_sha256": "298eea5252a90deaadc55fb8adeb516d1f3f9123a47301b50e972a3cac55941f",
+      "archived_source_binding": {
+        "status": "prelaunch_deployment_hash_bound",
+        "evidence": [
+          "archives/construction_control/deployment_manifest.json"
+        ],
+        "expected_source_sha256": "298eea5252a90deaadc55fb8adeb516d1f3f9123a47301b50e972a3cac55941f",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/run_generative_construction_null.py",
+      "sha256": "2288995d96d28a63510837fab787e3d4443e21c4040f9617299e1aa6f42f86ec",
+      "role": "execution_entry_or_launcher",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/run_generative_construction_null.py",
+      "snapshot_source_sha256": "aaa6ef921f0e08ee376d6118083968f10ea5fca2b6a39c5a1281e527055f5a7e",
+      "archived_source_binding": {
+        "status": "frozen_protocol_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/construction_null_generative_revision_v3/protocol.json",
+          "archives/outputs_KT4/construction_null_generative_revision_v3/final/COMPLETE.json"
+        ],
+        "expected_source_sha256": "aaa6ef921f0e08ee376d6118083968f10ea5fca2b6a39c5a1281e527055f5a7e",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/submit_construction_null.py",
+      "sha256": "7f44873dc749816b2721f865d397a9773ed70bce3b6be84df09f837321498802",
+      "role": "execution_entry_or_launcher",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/submit_construction_null.py",
+      "snapshot_source_sha256": "a718641d45c68146be08d1595ba77b67a3b459236df3944cbe04bb5ebfe9ce33",
+      "archived_source_binding": {
+        "status": "frozen_protocol_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/construction_null_generative_revision_v3/protocol.json",
+          "archives/outputs_KT4/construction_null_generative_revision_v3/final/COMPLETE.json"
+        ],
+        "expected_source_sha256": "a718641d45c68146be08d1595ba77b67a3b459236df3944cbe04bb5ebfe9ce33",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/summarize_generative_construction_null.py",
+      "sha256": "8ac38961ae55cf7676377da76f35058fce160fa2ac669b88a2fde5a16c0a171c",
+      "role": "numerical_reporting",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/summarize_generative_construction_null.py",
+      "snapshot_source_sha256": "b7b83a72e1741e1b9901de9519d4f9aa6ed935eeb2ac0a05e4ef0ce42639eb4c",
+      "archived_source_binding": {
+        "status": "frozen_protocol_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/construction_null_generative_revision_v3/protocol.json",
+          "archives/outputs_KT4/construction_null_generative_revision_v3/final/COMPLETE.json"
+        ],
+        "expected_source_sha256": "b7b83a72e1741e1b9901de9519d4f9aa6ed935eeb2ac0a05e4ef0ce42639eb4c",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/tests/test_construction_null.py",
+      "sha256": "3e4a306e2bb109630e64803a4c0580e1fc5f052fe12a42ab8d11bf5390227afa",
+      "role": "validation_support",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/tests/test_construction_null.py",
+      "snapshot_source_sha256": "8ca03d908a13271e2189546b372e07a22a83035c312c0de42eef92a914d1d43e",
+      "archived_source_binding": {
+        "status": "later_validation_snapshot_not_prelaunch_test_version",
+        "evidence": [
+          "archives/construction_control/deployment_manifest.json"
+        ],
+        "expected_source_sha256": "3b7667f37edc53a743837267aa64a0d794d3bff91f2871593787278736457ba2",
+        "hash_verified": false
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/tests/test_execution_integrity.py",
+      "sha256": "a6839b87b644e730b141541a0f74a99bc6b9436ce46acd4bc221ae18f67567fb",
+      "role": "validation_support",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/tests/test_execution_integrity.py",
+      "snapshot_source_sha256": "cdab842af4f6943b69901f2cfa08357c3886701ac2f831e4aa57d35b91383907",
+      "archived_source_binding": {
+        "status": "prelaunch_deployment_hash_bound",
+        "evidence": [
+          "archives/construction_control/deployment_manifest.json"
+        ],
+        "expected_source_sha256": "cdab842af4f6943b69901f2cfa08357c3886701ac2f831e4aa57d35b91383907",
+        "hash_verified": true
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s1_empirical_dynamics/robustness/generative_construction_null/tests/test_execution_summary.py",
+      "sha256": "b2379d75072c80097572325d0ee8f3aa6ceab4b6ad6e04bbc9114fbc9bcd2d15",
+      "role": "validation_support",
+      "analysis": "construction_control",
+      "snapshot_source": "construction_control/tests/test_execution_summary.py",
+      "snapshot_source_sha256": "bfcdc1c9705be4052e767d9e0b76e6d7b9142b3ee2b0d5b100348bf136a4db55",
+      "archived_source_binding": {
+        "status": "prelaunch_deployment_hash_bound",
+        "evidence": [
+          "archives/construction_control/deployment_manifest.json"
+        ],
+        "expected_source_sha256": "bfcdc1c9705be4052e767d9e0b76e6d7b9142b3ee2b0d5b100348bf136a4db55",
+        "hash_verified": true
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/README.md",
+      "sha256": "19750842140249b48f48524e7a97b3ffbeecddd3741ec0f94b27b557ea7a329a",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/README.md",
+      "sha256": "8ecf25d34edc2f3f3e53c01c179af640533102ac8fb92d8515d5367c4e521978",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/README.md",
+      "sha256": "5adcfb47637acc675ba11d29137fb18b02e72e46bda0d22c891c1d8dec747444",
+      "role": "documentation",
+      "analysis": "mechanism_comparisons",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_common.py",
+      "sha256": "3d8300c6abea3e38ab2e709db9af1c1888dcdd8cb99737be834a4b61a7c2c8b3",
+      "role": "numerical_implementation",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_common.py",
+      "snapshot_source_sha256": "ad5644d7e6a5c09f9a1acbeb20bf285bfbe343b87a875ca05d28a3184ab27d5e",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "ad5644d7e6a5c09f9a1acbeb20bf285bfbe343b87a875ca05d28a3184ab27d5e",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_data.py",
+      "sha256": "fb9321f38208336df9a2c6ebe5d57b3844e9ec2b47d50f8477a5d126a4deb4c0",
+      "role": "numerical_implementation",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_data.py",
+      "snapshot_source_sha256": "72f1b214f9cf951c06dd2c3be66ebd958c678657e708c8235ded99ea52798d0a",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "72f1b214f9cf951c06dd2c3be66ebd958c678657e708c8235ded99ea52798d0a",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_models.py",
+      "sha256": "81a509ee33bfb131b3fbb6efcfa5aa9157f4e68af1f179fd1944c636975db104",
+      "role": "numerical_implementation",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_models.py",
+      "snapshot_source_sha256": "c9353429252ad09ccfb81c5944ca132fe23b41652b156a3596aa7b1becf12a4a",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "c9353429252ad09ccfb81c5944ca132fe23b41652b156a3596aa7b1becf12a4a",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_pipeline.py",
+      "sha256": "e154778dbae6cd9272c8af492443ddb580d907a51a5e0bfa0ca389d6920262e8",
+      "role": "numerical_implementation",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_pipeline.py",
+      "snapshot_source_sha256": "895e6bf28d4edec896fccc40b5b29da25cc1b096752b7b8cea2c55d7ec32f6f5",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "895e6bf28d4edec896fccc40b5b29da25cc1b096752b7b8cea2c55d7ec32f6f5",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_reporting.py",
+      "sha256": "15d5d69c96501776aa9a938f42daca40945ad54e9280b92ebda81bcb053582b0",
+      "role": "numerical_reporting",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_reporting.py",
+      "snapshot_source_sha256": "42d0cf3120b19a3c001685aaa784a40cd3e5ea5e7f6cd55df778a6fb3ff738ae",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "42d0cf3120b19a3c001685aaa784a40cd3e5ea5e7f6cd55df778a6fb3ff738ae",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/ft_statistics.py",
+      "sha256": "1e0ce08f5e6dd3fc9637aa8f61b40deb85a754def16e940c097baded1da5bc89",
+      "role": "numerical_implementation",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/ft_statistics.py",
+      "snapshot_source_sha256": "b204a180650fb01ab6f10289dc539ec933d2c89ebd80d1260ab9df88a783b925",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "b204a180650fb01ab6f10289dc539ec933d2c89ebd80d1260ab9df88a783b925",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/requirements.txt",
+      "sha256": "82be18defbc00938d1c91d9b645742f4a0938674c539033857d36aaa9b3c76cd",
+      "role": "configuration_or_dependency",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/requirements.txt",
+      "snapshot_source_sha256": "64ec056593d4a7494f2735181b750d80b097a9e58a57e5e424848679ff581197",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/requirements.txt"
+        ],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/run_direct.sh",
+      "sha256": "6f02531eea1dadc58a2e2841486ee0d19f82a62d62c0da79156187f51aea80ed",
+      "role": "execution_entry_or_launcher",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/run_direct.sh",
+      "snapshot_source_sha256": "f50f60b9e1a95f4c13892047d45e07bc15cf65952e912bdaabe26da0b55b222e",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "f50f60b9e1a95f4c13892047d45e07bc15cf65952e912bdaabe26da0b55b222e",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/run_fourterm.py",
+      "sha256": "c0e296906e68f2cfa4596b5ff6bd21eaecffd9e8ed299c14bcdebe619b623b95",
+      "role": "execution_entry_or_launcher",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/run_fourterm.py",
+      "snapshot_source_sha256": "ea0db9cfcc6d2c06e4201c8df945d4c30d6b836a152d26f1bdc4498e7b205f65",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "ea0db9cfcc6d2c06e4201c8df945d4c30d6b836a152d26f1bdc4498e7b205f65",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/source_contract.json",
+      "sha256": "fe8043c98524699e8dc91f2afb3b60678ffb4524daec44cfabf7f76c62c50026",
+      "role": "configuration_or_dependency",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/source_contract.json",
+      "snapshot_source_sha256": "2b5ba2fd2e8fbd946207161afddb2e09e0feeb4d12d2371ce207f0da9cf95dcc",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/four_term_mechanism_revision/run_contract.json",
+          "archives/outputs_KT4/four_term_mechanism_revision/final/COMPLETE.json"
+        ],
+        "aggregate_sha256": "aa978eeb556fe4181887f10b3f871990d05b28feba0f32c96144d139eb982837",
+        "expected_source_sha256": "2b5ba2fd2e8fbd946207161afddb2e09e0feeb4d12d2371ce207f0da9cf95dcc",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/run_integration.py",
+      "sha256": "12e113931a8a3c4b0ca723dc4f1951ee0cbd34359f6355a21b562e140f59176b",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/run_integration.py",
+      "snapshot_source_sha256": "e7de73b0cfb9d402a81e11606ecf51a02c3cace88ae10cc4740a2937bdb743cd",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/run_integration.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/synthetic_fixture.py",
+      "sha256": "461686b8bcc68c7d9d5637b6a838941193010fc77aa51a6b0b888222de6ec7fc",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/synthetic_fixture.py",
+      "snapshot_source_sha256": "5eab6ae94281e60922e2b2788667a5bdaedb10ba2e2381e94ee06a3a5281eb58",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/synthetic_fixture.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/test_coordinate_recovery_regressions.py",
+      "sha256": "f0ad255028a9acfc20fe2a75dce5c643fcd1a6e6244e8dde9f0b0932555f007f",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/test_coordinate_recovery_regressions.py",
+      "snapshot_source_sha256": "f1c3437130e955e26fe44674197b9d513248e21fdde1326f7d1875fc2d5208b2",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/test_coordinate_recovery_regressions.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/test_fourterm.py",
+      "sha256": "f8faa8d179bf289d37c8ce81e5508e745c7610ca82baec112547062b206266e3",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/test_fourterm.py",
+      "snapshot_source_sha256": "06762f16926c975c014797201849e34eaa9d13b3c650fc78538e27485d1ffeb0",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/test_fourterm.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/test_k6_recovery_regressions.py",
+      "sha256": "66131f2787c056e3cfb88bd7b59f938d80cacc364ab8e1283df855216e60585d",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/test_k6_recovery_regressions.py",
+      "snapshot_source_sha256": "7649e59c7b63a2c9ffebf7cf804273f615a75f03608504dc6b32ea2f62c48019",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/test_k6_recovery_regressions.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/test_receipt_regressions.py",
+      "sha256": "dd0af9243e67c5121c9658f8d1bdd72988aa4343d594d73ed2a337e57cf7e040",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/test_receipt_regressions.py",
+      "snapshot_source_sha256": "04b7e04263b7201e31ca2b553793c77d0080e860e7d1350cc16940560e014a07",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/test_receipt_regressions.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s2_minimal_mechanism/robustness/conditional_baselines/tests/test_reporting_regressions.py",
+      "sha256": "5717bcb5b20afe9d2d548a071b4cf8690cec72b81bb1ddf6a85390c0c33ac9a4",
+      "role": "validation_support",
+      "analysis": "mechanism_comparisons",
+      "snapshot_source": "mechanism_comparisons/tests/test_reporting_regressions.py",
+      "snapshot_source_sha256": "bf0b05f14d5308a0736f620fa6b5234308ccf8b193bd59688cec5c4068f482da",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/mechanism_comparisons/tests/test_reporting_regressions.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/README.md",
+      "sha256": "ac9e269a8c1827287f0863846a77626206ecdefb53e5388c228fc7341d2f5dd9",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/README.md",
+      "sha256": "0e089f7af8a8cd6e4add5b1503fc72d4cc1927571f10958c08186f987e6ca1eb",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/README.md",
+      "sha256": "fcdd6253154aa6a431b92f07e9eda50ab1d80a38d2df16e8a41c4aa731e390a0",
+      "role": "documentation",
+      "analysis": "ssl_core",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/eval_cpu.py",
+      "sha256": "7287c2ab9304d951c56e82c38e836d0140af109f05f6659e1eab7cdc72e90048",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_execution/eval_cpu.py",
+      "snapshot_source_sha256": "8a24f8a5ace159a5ade48fb65cbd77765338a80f8874a91545246156d415f05b",
+      "archived_source_binding": {
+        "status": "final_six_seed_execution_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/final/mixed_contract_manifest.json"
+        ],
+        "expected_source_sha256": "8a24f8a5ace159a5ade48fb65cbd77765338a80f8874a91545246156d415f05b",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/finalize_six.py",
+      "sha256": "f7a42d815ee855ef4b02716cc67ade5a000bb8b15355b66a7d9e4a5703222578",
+      "role": "numerical_reporting",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_execution/finalize_six.py",
+      "snapshot_source_sha256": "fd1a41722573dafdf5255b037cdb5ee53b7ea79a6a484e186dca9f8fc7ebd22b",
+      "archived_source_binding": {
+        "status": "final_six_seed_execution_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/final/mixed_contract_manifest.json"
+        ],
+        "expected_source_sha256": "fd1a41722573dafdf5255b037cdb5ee53b7ea79a6a484e186dca9f8fc7ebd22b",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/protocol.json",
+      "sha256": "a8ed33bb22f26c7c6b253ba53366bccc28bbd041c121509c0fc04c55f1780abc",
+      "role": "configuration_or_dependency",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/protocol.json",
+      "snapshot_source_sha256": "92f1e56f4dfe6ff14591ebac1ac503ceb19af09ef51f61f19843c7ed106880ae",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "92f1e56f4dfe6ff14591ebac1ac503ceb19af09ef51f61f19843c7ed106880ae",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/requirements.txt",
+      "sha256": "16f39e21e3f603c010c0efb378b533e1a2313d0608abaa65ca648a8643ec3916",
+      "role": "configuration_or_dependency",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/requirements.txt",
+      "snapshot_source_sha256": "11bbceba531eac40d2cf0c6bcdc6037568a322f614b26df476c55abbebe88f7f",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/requirements.txt"
+        ],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/run_direct.sh",
+      "sha256": "66f8067ccde79537be7578bb3115bb05e707a8c7ce8bc2d141e62ed265ba7782",
+      "role": "execution_entry_or_launcher",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/run_direct.sh",
+      "snapshot_source_sha256": "0ddc3f1b06c2ff75a406029387b941c0c17647ce82cf9a8d6ca1c7d6f60b4a31",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "0ddc3f1b06c2ff75a406029387b941c0c17647ce82cf9a8d6ca1c7d6f60b4a31",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/run_ssl.py",
+      "sha256": "80696af9f60d1f9107a74ae4e6d7d0fb53dbb792de9e9e14f1ae871d6a1f2317",
+      "role": "execution_entry_or_launcher",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/run_ssl.py",
+      "snapshot_source_sha256": "cdd22b72b0c430c6462e4a1fc46aca207d31998e5a9cc05dfba38ddf89156b5e",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "cdd22b72b0c430c6462e4a1fc46aca207d31998e5a9cc05dfba38ddf89156b5e",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/slurm_s3.py",
+      "sha256": "7e937f1a225ab616685dcdea03538eefdb2de44693a15f9bcb76442e84554253",
+      "role": "execution_entry_or_launcher",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_execution/slurm_s3.py",
+      "snapshot_source_sha256": "8d9909156c0c7763ab47fe4cdcc2b156ecb6f2a2bf80135f7acd321b2a4721a4",
+      "archived_source_binding": {
+        "status": "final_six_seed_execution_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/final/mixed_contract_manifest.json"
+        ],
+        "expected_source_sha256": "8d9909156c0c7763ab47fe4cdcc2b156ecb6f2a2bf80135f7acd321b2a4721a4",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/slurm_s3.sbatch",
+      "sha256": "ba3be315edbfb120f003d03828fb54142fb7b4cda1ed47000205a6c914928dc7",
+      "role": "execution_entry_or_launcher",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_execution/slurm_s3.sbatch",
+      "snapshot_source_sha256": "9bf72d9fc78e7d02db457b8dc257265fc4a0870dc5297d22e467ea678d00448a",
+      "archived_source_binding": {
+        "status": "final_six_seed_execution_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/final/mixed_contract_manifest.json"
+        ],
+        "expected_source_sha256": "9bf72d9fc78e7d02db457b8dc257265fc4a0870dc5297d22e467ea678d00448a",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/source_contract.json",
+      "sha256": "b36b9c5425c935f3b3d202028cfde497e15a5a151781b1b0fa28273e6d0c1445",
+      "role": "configuration_or_dependency",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/source_contract.json",
+      "snapshot_source_sha256": "f4ec9d8450267d734bda9226ecf099e9b26b812976a8a2fa6d6e81f4e8ff7d92",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "f4ec9d8450267d734bda9226ecf099e9b26b812976a8a2fa6d6e81f4e8ff7d92",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_common.py",
+      "sha256": "7602774fddee121b89147da8af1bb6bbecbfd4d8346aa92e54fff63bee581609",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_common.py",
+      "snapshot_source_sha256": "1319e14ebff146d33f0eb7d73fe4050d5a021413a62223dea7b9ed3ed91286cc",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "1319e14ebff146d33f0eb7d73fe4050d5a021413a62223dea7b9ed3ed91286cc",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_data.py",
+      "sha256": "e426730ef5eb5e1b17cbdbd588d856ed6aa5d17420083953452dfcc2a0909d1b",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_data.py",
+      "snapshot_source_sha256": "8e92d1f188fbeef1afc10aa7dae27b9dd5a35c4062d3eb83b28ab4ccaf7e9af4",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "8e92d1f188fbeef1afc10aa7dae27b9dd5a35c4062d3eb83b28ab4ccaf7e9af4",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_neural.py",
+      "sha256": "f6fc2586da7a068de4445ced926ffbc5450c3d30e5bf7a70a4d7090b174cf0b9",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_neural.py",
+      "snapshot_source_sha256": "f599f6e07770c2f5f74c87aab04c94d8d58f13c3cfb0f07722c699d6d84416e1",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "f599f6e07770c2f5f74c87aab04c94d8d58f13c3cfb0f07722c699d6d84416e1",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_pipeline.py",
+      "sha256": "28df6807387b0646c7e52377121304b5ff0aa9aeeec884f879de97c0769ff4d3",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_pipeline.py",
+      "snapshot_source_sha256": "92250e225db278b3866211f9a935f84fa062acce8fc07f90e60db0c5d359bfff",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "92250e225db278b3866211f9a935f84fa062acce8fc07f90e60db0c5d359bfff",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_reporting.py",
+      "sha256": "9f51c29f423d000aae7d8f0220b935ed945e14daab64b9dc4383aab5461000c8",
+      "role": "numerical_reporting",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_reporting.py",
+      "snapshot_source_sha256": "828ccb95c416027d034b999e7dba17655f1e8bf5d98d730074243241b665b596",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "828ccb95c416027d034b999e7dba17655f1e8bf5d98d730074243241b665b596",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/ssl_statistics.py",
+      "sha256": "e39e034926215af8bf35c4f59a23acf87ec51bc758fb5535d0afe92340e0ae15",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/ssl_statistics.py",
+      "snapshot_source_sha256": "4d3f2d8658935a65c4cb8fdaf4d218de011a713080c5c216d6f6b66fd848eff0",
+      "archived_source_binding": {
+        "status": "formal_combined_digest_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/RUN_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S0/run_contract.json"
+        ],
+        "aggregate_sha256": "f5774889cc2c4b14b413a40f247dfbac2bbc4bcd505913e5ff7df257654a02c6",
+        "expected_source_sha256": "4d3f2d8658935a65c4cb8fdaf4d218de011a713080c5c216d6f6b66fd848eff0",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/run_integration.py",
+      "sha256": "b6e685b046bd366d12ce141409c4b89349b39cbda0934c7542be040198024994",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/tests/run_integration.py",
+      "snapshot_source_sha256": "125ff60b5518f17c0c923cf2584ea4069ce71b2bc64f8ab2946ba90a5d758492",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/tests/run_integration.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/synthetic_fixture.py",
+      "sha256": "5f7b76178b9d032bb62aa56d251d571552eab139de1921352bd0a0a51ba9e30f",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/tests/synthetic_fixture.py",
+      "snapshot_source_sha256": "a5420523580361e50ead69c0bce9efef8bc421f41e9f61de73b0c1406654c8e0",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/tests/synthetic_fixture.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/test_execution_contract.py",
+      "sha256": "12f446302d98985130ef30138cd963779c0195ca61c3d3d9da1c9ca2e4551df2",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/test_reporting_contract.py",
+      "sha256": "d42578945e40a2bd08919acfb4d85294bac294102180e06cd45377d6c0bbc623",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/tests/test_reporting_contract.py",
+      "snapshot_source_sha256": "c5b9bda5c92f80869a9e8c351d75c2a401f8e03dd198f850be2b17f1a0e4eb26",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/tests/test_reporting_contract.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/test_resume_contract.py",
+      "sha256": "c30467786b36a939e8827d8cdfd1f9a44247b11f569f97a264649759a7df5a21",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/tests/test_resume_contract.py",
+      "snapshot_source_sha256": "5ad4bc151e24bfe8eefa4ea61224b421ea97a24dca370759c0e3faf7b90cfb97",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/tests/test_resume_contract.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/tests/test_ssl.py",
+      "sha256": "e1d16ab5a93909d5e61ab3ee7f66f1ac44dd420da9ab510754221c30d634cc36",
+      "role": "validation_support",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_core/tests/test_ssl.py",
+      "snapshot_source_sha256": "9d78daa64011b30a197d54526560711c762660b5767ca42c848b9351f5daeff8",
+      "archived_source_binding": {
+        "status": "archived_support_snapshot_only_not_formal_execution_bound",
+        "evidence": [
+          "archives/source_snapshots/ssl_core/tests/test_ssl.py"
+        ],
+        "hash_verified": null
+      },
+      "scientific_execution_entry": false
+    },
+    {
+      "path": "s3_event_ssl/robustness/information_controls/train_gpu.py",
+      "sha256": "8664f5265d7059b78114c7ac906f1d48677073fb4fa2d33255579b2b1aab02c6",
+      "role": "numerical_implementation",
+      "analysis": "ssl_core",
+      "snapshot_source": "ssl_execution/train_gpu.py",
+      "snapshot_source_sha256": "866d5950874bc443157d1a3ab245b123347c213b4f1b88250c2f6bba43d2133b",
+      "archived_source_binding": {
+        "status": "final_six_seed_execution_hash_bound",
+        "evidence": [
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/S3_EXECUTION_CONTRACT.json",
+          "archives/outputs_KT4/ssl_core_revision_cpu_v2/final/mixed_contract_manifest.json"
+        ],
+        "expected_source_sha256": "866d5950874bc443157d1a3ab245b123347c213b4f1b88250c2f6bba43d2133b",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s4_cross_analysis/README.md",
+      "sha256": "d418e4aaade94dd193ebbbe94a1084563bd64da3c2ef2922b07396159b29e54e",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/README.md",
+      "sha256": "8fc0cda54d4f96e7bd4b297375fe222e2941c53ef917ad7833136e3392282ead",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/common_reference/README.md",
+      "sha256": "e82e763c012ebdf737235ec2a1bc40d10b356d48eea02239efc369fc57f2cd25",
+      "role": "documentation",
+      "analysis": "common_reference",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/common_reference/compatibility_contract.json",
+      "sha256": "bbed9f93ea0ed969e94fc70ac533f7bca2d0f46ac619ec5fac62e37dbe3d6e45",
+      "role": "configuration_or_dependency",
+      "analysis": "common_reference",
+      "archived_source_binding": {
+        "status": "new_public_material_not_formal_execution_source",
+        "evidence": [],
+        "hash_verified": null
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/common_reference/p1_reports.py",
+      "sha256": "4f5a3a1fc00d070f34aab52b250b68838ec2a3b14a9ff0d274813520c4fce604",
+      "role": "numerical_reporting",
+      "analysis": "common_reference",
+      "snapshot_source": "common_reference/p1_reports.py",
+      "snapshot_source_sha256": "e81302b03900e3df396b003a4c9cc3abaf985b15d5e7c705195530f80e3e8dc9",
+      "archived_source_binding": {
+        "status": "formal_completion_hash_bound",
+        "evidence": [
+          "archives/common_reference/formal/COMPLETE.json"
+        ],
+        "expected_source_sha256": "e81302b03900e3df396b003a4c9cc3abaf985b15d5e7c705195530f80e3e8dc9",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/common_reference/presentation_figures.py",
+      "sha256": "c1f44c0040c5f1e576d843555467fd521803382c4116b204260f9b4fe9f5a600",
+      "role": "numerical_reporting",
+      "analysis": "common_reference",
+      "snapshot_source": "common_reference/presentation_figures.py",
+      "snapshot_source_sha256": "c7206502fca48f4fe2e0424ffd770bd3696e511cea8baa743d3b9c0958b11fb6",
+      "archived_source_binding": {
+        "status": "completed_posthoc_presentation_hash_bound",
+        "evidence": [
+          "archives/common_reference/presentation/PRESENTATION_COMPLETE.json"
+        ],
+        "expected_source_sha256": "c7206502fca48f4fe2e0424ffd770bd3696e511cea8baa743d3b9c0958b11fb6",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s4_cross_analysis/robustness/common_reference/run_excess.py",
+      "sha256": "713c1afabcdadd4916976dab5e65e2584cc49a1daa5dd196fb71f68d55cdd3ec",
+      "role": "execution_entry_or_launcher",
+      "analysis": "common_reference",
+      "snapshot_source": "common_reference/run_excess.py",
+      "snapshot_source_sha256": "17054a2c6b71266161f48788d157889370656707bcdafebd240d6cee54a43bf9",
+      "archived_source_binding": {
+        "status": "formal_completion_hash_bound",
+        "evidence": [
+          "archives/common_reference/formal/COMPLETE.json"
+        ],
+        "expected_source_sha256": "17054a2c6b71266161f48788d157889370656707bcdafebd240d6cee54a43bf9",
+        "hash_verified": true
+      }
+    },
+    {
+      "path": "s5_supplementary/README.md",
+      "sha256": "d56067eecd6fc569d5bfa9a4eb70720769e93b9e9de4a542956cece11ba6c0dd",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s5_supplementary/scripts/README.md",
+      "sha256": "daf5855218158851ce06a4b7a82a24a6ee735ecefb0f4c7b429324e0bf213619",
+      "role": "documentation",
+      "archived_source_binding": {
+        "status": "documentation_not_scientific_execution_source",
+        "evidence": []
+      }
+    },
+    {
+      "path": "s5_supplementary/scripts/statistical_closure/README.md",
+      "sha256": "a9f1646668685ba939f2c806216825cb46575263adeead2d0322783f0e98efa5",
+      "role": "documentation",
+      "analysis": "statistical_reporting",
+      "archived_source_binding": {
+        "status": "new_reporting_derivation_not_original_experiment_source",
+        "evidence": [
+          "archives/statistical_reporting/source/build_main_B1B2.py",
+          "archives/statistical_reporting/verification/acceptance_checks.json",
+          "archives/statistical_reporting/verification/all_sections/manifest.json"
+        ],
+        "hash_verified": null
+      },
+      "origin": "Derived reporting from preserved numerical outputs; not an original model-training or bootstrap-generation program."
+    },
+    {
+      "path": "s5_supplementary/scripts/statistical_closure/build_statistical_reports.py",
+      "sha256": "71defd7bc7adffab63552c9ce1e44fd61dd4a5682cd59c7fe4dbc53fd0f54395",
+      "role": "derived_statistical_reporting",
+      "analysis": "statistical_reporting",
+      "archived_source_binding": {
+        "status": "new_reporting_derivation_not_original_experiment_source",
+        "evidence": [
+          "archives/statistical_reporting/source/build_main_B1B2.py",
+          "archives/statistical_reporting/verification/acceptance_checks.json",
+          "archives/statistical_reporting/verification/all_sections/manifest.json"
+        ],
+        "hash_verified": null
+      },
+      "origin": "Derived reporting from preserved numerical outputs; not an original model-training or bootstrap-generation program."
+    },
+    {
+      "path": "s5_supplementary/scripts/statistical_closure/estimand_definitions.json",
+      "sha256": "431bfa3620e21f23b9374912a5c0fe1be6b454fe4d0d55ef97d24c8f41253cd7",
+      "role": "configuration_or_dependency",
+      "analysis": "statistical_reporting",
+      "archived_source_binding": {
+        "status": "new_reporting_derivation_not_original_experiment_source",
+        "evidence": [
+          "archives/statistical_reporting/source/build_main_B1B2.py",
+          "archives/statistical_reporting/verification/acceptance_checks.json",
+          "archives/statistical_reporting/verification/all_sections/manifest.json"
+        ],
+        "hash_verified": null
+      },
+      "origin": "Derived reporting from preserved numerical outputs; not an original model-training or bootstrap-generation program."
+    },
+    {
+      "path": "s5_supplementary/scripts/statistical_closure/requirements.txt",
+      "sha256": "e6b70cf12964bece3c389f45e5f7c543ec9cc1b06136fa4f70a26ed66cc4715d",
+      "role": "configuration_or_dependency",
+      "analysis": "statistical_reporting",
+      "archived_source_binding": {
+        "status": "new_reporting_derivation_not_original_experiment_source",
+        "evidence": [
+          "archives/statistical_reporting/source/build_main_B1B2.py",
+          "archives/statistical_reporting/verification/acceptance_checks.json",
+          "archives/statistical_reporting/verification/all_sections/manifest.json"
+        ],
+        "hash_verified": null
+      },
+      "origin": "Derived reporting from preserved numerical outputs; not an original model-training or bootstrap-generation program."
+    }
+  ]
+}

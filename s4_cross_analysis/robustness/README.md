@@ -78,3 +78,23 @@ EVENT_SSL_SEED37_ROOT=${OUTPUT_ROOT}/random_seed_experiments/seed_37/stage4_even
 EVENT_SSL_SEED4669_ROOT=${OUTPUT_ROOT}/random_seed_experiments/seed_4669/stage4_event_ssl/evaluation_predictive_state \
 bash ${CROSS_ROBUSTNESS}/run_six_seed_null_common_target_audit.sh
 ```
+
+## Common-reference comparisons
+
+Complete the [conditional-baseline workflow](../../s2_minimal_mechanism/robustness/conditional_baselines/README.md) and all six original neural prediction exports first. Use the conditional-baseline Python environment. `FOURTERM_ROOT` supplies the frozen predictors, confirmation predictions matched by learner and interval, and the 2,000 seed-42 paired learner draws. Choose a new destination for each run.
+
+```bash
+COMMON_REFERENCE=${CROSS_ROBUSTNESS}/common_reference
+FOURTERM_ROOT=/path/to/conditional_baseline_results
+COMMON_REFERENCE_ROOT=/path/to/common_reference_results
+COMMON_REFERENCE_SMOKE=/path/to/common_reference_smoke
+
+python ${COMMON_REFERENCE}/run_excess.py \
+  --history ${OUTPUT_ROOT} --fourterm-root ${FOURTERM_ROOT} \
+  --output ${COMMON_REFERENCE_SMOKE} --smoke --workers 8
+python ${COMMON_REFERENCE}/run_excess.py \
+  --history ${OUTPUT_ROOT} --fourterm-root ${FOURTERM_ROOT} \
+  --output ${COMMON_REFERENCE_ROOT} --workers 8
+```
+
+The module locates the conditional-baseline code in this repository. The smoke run checks selected saved draws. The full run uses all 2,000 paired learner draws and computes point estimates at six training seeds. See the [module guide](common_reference/README.md) for the output files, support rules and figure commands. Pass the completed `COMMON_REFERENCE_ROOT` to the [statistical reporting workflow](../../s5_supplementary/scripts/statistical_closure/README.md).

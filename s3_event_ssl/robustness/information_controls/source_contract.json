@@ -1,0 +1,9 @@
+{
+  "files": {
+    "prepare_event_ssl_inputs.py": "acbf225469be6b33b0c5e718182e28f245c7387bdfc35f615eec2480ed0c744f",
+    "evaluate_event_ssl_structure.py": "0a65508c42634098160aaf497cd7e82711b5a309ff5fba94fd831c5042d7db52",
+    "train_event_ssl.py": "1357dcd70fd3dacfbef6ec8dc4d8b2444de8c4e1452fa5028b20da46164d9044"
+  },
+  "policy": "Import only these unchanged original repository modules and verify every source hash.",
+  "original_source_directory": "../../main"
+}

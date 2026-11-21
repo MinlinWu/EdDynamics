@@ -1,0 +1,31 @@
+{
+  "source": "outputs_KT4/frozen_headline_learner_cluster_uncertainty/tables/field_cluster_bootstrap_intervals.parquet",
+  "sha256": "898b9f5cbbc37e912c8243f02f03050b150c3fc32cecf8af9dec7735575ff03c",
+  "rows": [
+    {
+      "comparison": "mechanism_vs_event_ssl_anchor",
+      "support_contract": "fixed_formal_support",
+      "metric": "weighted_local_cosine",
+      "point_estimate": 0.7850827608610391,
+      "requested_replicates": 2000,
+      "finite_fraction": 0.993,
+      "primary_interval": true,
+      "reported_interval_method": "cluster_bootstrap_se_raw_bounded",
+      "reported_ci_low": 0.7773499502396988,
+      "reported_ci_high": 0.7928155714823795,
+      "interval_interpretation": "learner-cluster bootstrap standard-error interval centred on the formal point and conditional on the formal support",
+      "finite_replicates": 1986,
+      "bootstrap_mean": 0.7833144226649722,
+      "bootstrap_sd": 0.003945384038857767,
+      "bootstrap_median": 0.7832909392814554,
+      "bootstrap_bias": -0.0017683381960669209,
+      "se_centered_ci_low": 0.7773499502396988,
+      "se_centered_ci_high": 0.7928155714823795,
+      "basic_ci_low": 0.7789402214815979,
+      "basic_ci_high": 0.7944778154537503,
+      "percentile_low": 0.775687706268328,
+      "percentile_high": 0.7912253002404803
+    }
+  ],
+  "round4": "0.7773"
+}

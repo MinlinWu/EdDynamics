@@ -104,6 +104,8 @@ bash ${S1_ROBUSTNESS}/excess_reliability/run_empirical_excess_reliability_soft_c
 
 ## Semantic-specificity control
 
+The protocol records the source hashes before confirmation. For a new run with different source files, use a fresh result directory and run validation, protocol freezing and confirmation in order. To verify a preserved run, use the source files identified in its freeze record and check the input grids against `source_integrity` in `semantic_specificity_summary_manifest.json`.
+
 ```bash
 OUTPUT_BASE=${OUTPUT_ROOT} \
 STAGE1_ROOT=${OUTPUT_ROOT}/stage1 \
@@ -114,3 +116,32 @@ STAGE1_SCRIPT=${S1_MAIN}/build_effective_dynamics_kt4_stage1_empirical.py \
 CONSTRUCTION_NULL_SCRIPT=${S1_ROBUSTNESS}/construction_null/run_construction_matched_null.py \
 bash ${S1_ROBUSTNESS}/semantic_specificity/run_semantic_specificity_control.sh
 ```
+
+## Generative construction controls
+
+Complete the semantic-specificity control above before this workflow. The required inputs include `${OUTPUT_ROOT}/stage1` and `${OUTPUT_ROOT}/semantic_specificity_control/coordinate/stage1`, their training-defined support and convergence regions, the original preprocessed KT4 bundle, and content metadata. The preprocessing path is resolved from the empirical manifest. Use the original EdDynamics Python environment on Linux; the direct launcher also requires `/usr/bin/time`.
+
+Choose unused result and smoke directories. Run the smoke command to completion before the formal command:
+
+```bash
+GENERATIVE_NULL=${S1_ROBUSTNESS}/generative_construction_null
+GENERATIVE_NULL_ROOT=${OUTPUT_ROOT}/generative_construction_null
+GENERATIVE_NULL_SMOKE=${OUTPUT_ROOT}/generative_construction_null_smoke
+
+python -m pip install -r ${GENERATIVE_NULL}/requirements.txt
+python -m unittest discover -s ${GENERATIVE_NULL}/tests -p 'test_*.py'
+
+python ${GENERATIVE_NULL}/execution_tools/run_direct_cpu.py \
+  --code-root ${GENERATIVE_NULL} --repo-root ${REPO_ROOT} \
+  --output-root ${OUTPUT_ROOT} \
+  --work-root ${GENERATIVE_NULL_ROOT} --smoke-root ${GENERATIVE_NULL_SMOKE} \
+  --phase smoke --workers 8 --seed 42 --smoke-users 200
+
+python ${GENERATIVE_NULL}/execution_tools/run_direct_cpu.py \
+  --code-root ${GENERATIVE_NULL} --repo-root ${REPO_ROOT} \
+  --output-root ${OUTPUT_ROOT} \
+  --work-root ${GENERATIVE_NULL_ROOT} --smoke-root ${GENERATIVE_NULL_SMOKE} \
+  --phase formal --workers 8 --seed 42
+```
+
+The formal design uses 999 simulations for each generating reference and cohort. These are Monte Carlo simulations, separate from learner-bootstrap uncertainty. The [module README](generative_construction_null/README.md) defines the two references, primary and sensitivity coordinates, support rules, complete output tables and alternative Slurm launcher. The Slurm launcher also accepts `--data-root` when the preprocessed data location differs from the empirical manifest. Use only one launcher for a result directory.

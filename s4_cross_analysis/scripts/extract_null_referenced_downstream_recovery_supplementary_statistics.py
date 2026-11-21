@@ -1285,7 +1285,7 @@ def build_markdown_report(
         "- The exact cyclic-shift expectation is used only as the deterministic mean field for decomposition; the original finite permutation ensemble remains the source of the construction-null Monte Carlo tests.",
         "- The primary endpoint is the paired occupancy-weighted squared-field-error difference, model minus exact null. Correction-versus-excess correlations and cosines share the same subtracted null field and are secondary effect-size diagnostics.",
         "- The per-coordinate rescaled scaffold is fitted on validation only, has no intercept and no sign reversal, and is frozen before confirmation. It is a stronger specificity benchmark, not a second formal null distribution.",
-        "- Confirmation is output-only and post-freeze, but this reviewer-motivated derived endpoint should not be described as preregistered.",
+        "- Confirmation is output-only and post-freeze. The derived endpoint was specified post hoc and was not preregistered.",
         "- User-level multiplier intervals are conditional on the frozen matching groups and exact row-level donor expectations; donor pools are not rebuilt inside each multiplier replicate.",
         "- Only empirical-anchor model fields enter the null subtraction. Learned-plane dynamics remain a separate Event-SSL self-consistency analysis.",
         "- Frozen-core geometry is descriptive and should not be presented as a new multiplicity-adjusted basin test.",

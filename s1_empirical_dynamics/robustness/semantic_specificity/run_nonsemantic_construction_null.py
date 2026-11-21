@@ -939,7 +939,7 @@ def run_analysis(args: argparse.Namespace) -> None:
         "runtime_seconds": float(time.time() - started),
         "analysis_split": split,
         "primary_manuscript_split": "A_val",
-        "analysis_status": "post hoc reviewer-motivated semantic-specificity control",
+        "analysis_status": "post hoc semantic-specificity control",
         "confirmation_output_only": bool(args.confirmation_output_only),
         "protocol_freeze": str(protocol_freeze_path) if protocol_freeze_path is not None else None,
         "protocol_freeze_sha256": sha256_file(protocol_freeze_path) if protocol_freeze_path is not None else None,

@@ -60,3 +60,34 @@ SEED37_ROOT=${OUTPUT_ROOT}/random_seed_experiments/seed_37 \
 SEED4669_ROOT=${OUTPUT_ROOT}/random_seed_experiments/seed_4669 \
 bash ${OBJECTIVE}/run_objective_control_hidden_geometry.sh
 ```
+
+## SSL information controls
+
+Use the prepared memory maps, frozen six-state partition, full and record-shuffled checkpoints and their evaluation records for each of the six seeds. Set `FOURTERM_ROOT` to the completed [conditional-baseline results](../../s2_minimal_mechanism/robustness/conditional_baselines/README.md), which supply predictions for each matched interval.
+
+Use one Python environment for CPU and GPU stages. Configure `slurm_s3.sbatch` before the smoke test because the code hash includes its resource directives. The supplied script requests one node, one task, five GPUs, 40 CPUs, 320 GB of memory and eight hours in the `gpu` partition. Its controller reads individually listed NVIDIA device files from `/etc/slurm/gres.conf`. See the [cluster requirements](information_controls/README.md#run-the-six-seed-design) when adapting the script.
+
+```bash
+SSL_INFORMATION=${EVENT_ROBUSTNESS}/information_controls
+FOURTERM_ROOT=/path/to/conditional_baseline_results
+export PYTHON_BIN=/path/to/environment/bin/python
+export SSL_CODE_ROOT=${SSL_INFORMATION}
+
+${PYTHON_BIN} -m pip install -r ${SSL_INFORMATION}/requirements.txt
+${PYTHON_BIN} ${SSL_INFORMATION}/run_ssl.py selftest
+${PYTHON_BIN} ${SSL_INFORMATION}/run_ssl.py check \
+  --output-root ${OUTPUT_ROOT} --fourterm-root ${FOURTERM_ROOT}
+${PYTHON_BIN} ${SSL_INFORMATION}/run_ssl.py smoke \
+  --output-root ${OUTPUT_ROOT} --fourterm-root ${FOURTERM_ROOT}
+${PYTHON_BIN} ${SSL_INFORMATION}/run_ssl.py cpu \
+  --output-root ${OUTPUT_ROOT} --fourterm-root ${FOURTERM_ROOT}
+
+(
+  cd ${SSL_INFORMATION}
+  sbatch slurm_s3.sbatch --history-root ${OUTPUT_ROOT}
+)
+```
+
+Run the Slurm submission only after the CPU command succeeds. The CPU stages prepare the source contract, replay full and record-shuffled checkpoints at six seeds, fit three pairs of information heads, and complete the future-only seed-42 pair with 2,000 paired learner draws. The Slurm job then fits seeds 2026, 666, 606, 37 and 4669 on five separate GPUs, evaluates their paired conditions on CPU, and verifies all 92 stages before writing `${OUTPUT_ROOT}/ssl_information_controls/final/COMPLETE.json`.
+
+The six-seed workflow uses `cpu` followed by Slurm. The GPU controller reads the C3 reference recorded during CPU preparation and calls `finalize_six.py` to assemble the six-seed report. The `all` and `report` commands belong to the separate three-seed CPU design. The standalone `s3` command runs the seed-42 CPU information-removal block. The [analysis guide](information_controls/README.md) maps each comparison in Supplementary Table 14 to its measurements, uncertainty and output files.

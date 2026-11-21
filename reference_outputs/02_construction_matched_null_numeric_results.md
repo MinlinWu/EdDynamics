@@ -5,6 +5,8 @@ source_extraction_script: "s1_empirical_dynamics/scripts/extract_construction_ma
 
 # Construction-matched null numerical results
 
+The `saved_field_path` entries give the location of each empirical field grid relative to the results root (`OUTPUT_ROOT`).
+
 ## A_val: analysis contract
 
 | split | analysis_role | rows_in_analysis_panel | users_in_analysis_panel | valid_drift_rows | replicates | base_seed | minimum_monte_carlo_p | primary_coordinates | shell_radius | frozen_core_sha256 | frozen_thresholds_sha256 | formal_stage1_script_sha256 | runtime_seconds |
@@ -121,7 +123,7 @@ source_extraction_script: "s1_empirical_dynamics/scripts/extract_construction_ma
 | A_val | reconstruction | max_rel_next_exposure_numerator_decay_error | 3.8075e-08 |
 | A_val | reconstruction | formal_field_estimator_reproduced_to_1e-12 | true |
 | A_val | archived_stage1_field | skipped | false |
-| A_val | archived_stage1_field | saved_field_path | /data/datasets/KT4/outputs_KT4/stage1/dynamics/coordinate_analysis/MR_PsiA/A_val_publication_field_grid.parquet |
+| A_val | archived_stage1_field | saved_field_path | stage1/dynamics/coordinate_analysis/MR_PsiA/A_val_publication_field_grid.parquet |
 | A_val | archived_stage1_field | max_abs_drift_M_difference | 0 |
 | A_val | archived_stage1_field | max_abs_drift_Psi_difference | 0 |
 | A_val | archived_stage1_field | max_abs_occupancy_probability_difference | 0 |
@@ -252,7 +254,7 @@ source_extraction_script: "s1_empirical_dynamics/scripts/extract_construction_ma
 | B_confirm | reconstruction | max_rel_next_exposure_numerator_decay_error | 1.9619e-08 |
 | B_confirm | reconstruction | formal_field_estimator_reproduced_to_1e-12 | true |
 | B_confirm | archived_stage1_field | skipped | false |
-| B_confirm | archived_stage1_field | saved_field_path | /data/datasets/KT4/outputs_KT4/stage1/dynamics/coordinate_analysis/MR_PsiA/B_confirm_publication_field_grid_output_only.parquet |
+| B_confirm | archived_stage1_field | saved_field_path | stage1/dynamics/coordinate_analysis/MR_PsiA/B_confirm_publication_field_grid_output_only.parquet |
 | B_confirm | archived_stage1_field | max_abs_drift_M_difference | 0 |
 | B_confirm | archived_stage1_field | max_abs_drift_Psi_difference | 0 |
 | B_confirm | archived_stage1_field | max_abs_occupancy_probability_difference | 0 |

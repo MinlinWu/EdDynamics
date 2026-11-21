@@ -1,0 +1,146 @@
+{
+  "source_archive_sha256": "610ab33c023f0d3c42b73b4cfe0975ee073c91ace9e8c2e0ec57e9a7b7005e06",
+  "phase1_sha256": "ebc161b5babc975727850301ca6cd50f8ae40c1eda837579ac08aff49edf69ac",
+  "k6_historical_export_recovery": {
+    "legacy_centers_sha256": "0ca19acceb7a2afd6de3ae83233a8eec2530b4d4f7b520b9326e67f0cca89f91",
+    "current_centers_sha256": "d02006523f6400306a3063660ca3ad100c1cd8f4ef133daab2bf269d0e058dd6",
+    "metadata_sha256": "13de2191cd5d543b867cfebb7f65c956e4f88a58ba8eeb24caaea79e0cbabc7a",
+    "export_sha256": "f0e90eef15bf1580c62b9d48bc5997d2bb54a10c0b4f85eba31406841e888e89",
+    "reason": "Restore frozen historical centers from six identical original evaluation exports; current Parquet differs by 2.609e-13 and is preserved. No center refit and no claim of byte identity.",
+    "references": [
+      {
+        "seed": 42,
+        "manifest": "stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "e2f96856fe52f70f9ebec790646c9cbbba6abe8dd0c78b1f2e2b3118c13aca88",
+        "centers": "stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      },
+      {
+        "seed": 2026,
+        "manifest": "random_seed_experiments/seed_2026/stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "a83fc4c866e95c52c22096a9ca2fcddbdfb0fe7f2ab53b66e6706a7e93b64f46",
+        "centers": "random_seed_experiments/seed_2026/stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      },
+      {
+        "seed": 666,
+        "manifest": "random_seed_experiments/seed_666/stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "aa913484d93f6efe3390e4f46448f6fe3ffd88b4e1d046500c0b1d376471bca8",
+        "centers": "random_seed_experiments/seed_666/stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      },
+      {
+        "seed": 606,
+        "manifest": "random_seed_experiments/seed_606/stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "d9eebd8dd9b4221e7d12594f6ca3291a9736e19842ac92d67cc401c656be4590",
+        "centers": "random_seed_experiments/seed_606/stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      },
+      {
+        "seed": 37,
+        "manifest": "random_seed_experiments/seed_37/stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "c3c025c2f88170e9306ac6e0fedb415873f16daedb9a4cd914d06340f50ea765",
+        "centers": "random_seed_experiments/seed_37/stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      },
+      {
+        "seed": 4669,
+        "manifest": "random_seed_experiments/seed_4669/stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json",
+        "manifest_sha256": "1090069defb3ecdafdb6ff9e53d47c6b6f324693513835d01b068986990830ad",
+        "centers": "random_seed_experiments/seed_4669/stage4_event_ssl/evaluation_predictive_state/tables/stage4_event_ssl_fixed_k6_macrostate_centers.csv"
+      }
+    ]
+  },
+  "b_confirm_coordinate_recovery": {
+    "version": "b-confirm-coordinate-recovery-v1",
+    "split": "B_confirm",
+    "reason": "Restore exactly four historical Psi coordinate values at a zero grid boundary; no global snapping, model changes or tolerance relaxation.",
+    "panel": {
+      "relative_path": "stage1/dynamics/student_dynamics_panel_core_B_confirm.csv.gz",
+      "sha256": "150ff5a97760d1ef90a1fd2103d0065a7d70dafd7404a3849f7eced1e613169b"
+    },
+    "archive": {
+      "relative_path": "stage2_phase3_confirm/tables/phase3_B_confirm_full_predictions.parquet",
+      "sha256": "f62e328a3f9800a9727f30d3cec6186d2d7b54867ee533e924d802e5d26c378e"
+    },
+    "bindings": [
+      {
+        "relative_path": "stage2_phase2_freeze/metadata/phase2_frozen_model_manifest.json",
+        "sha256": "165aa38197fe7dda5ffc8d6a435003b379170971197008ef03e91ed23bbd4233"
+      },
+      {
+        "relative_path": "stage2_phase2_freeze/metadata/phase2_frozen_model_manifest.sha256.json",
+        "sha256": "9032cf903eecbf31800cdc0fc6c3ac037655cd79bbb54e777e8ba8c32d475e07"
+      },
+      {
+        "relative_path": "stage2_phase2_freeze/metadata/frozen_phase1_implementation.py",
+        "sha256": "ebc161b5babc975727850301ca6cd50f8ae40c1eda837579ac08aff49edf69ac"
+      },
+      {
+        "relative_path": "stage2_phase3_confirm/metadata/phase3_confirmation_manifest.json",
+        "sha256": "86642893ed99417942a5dc8cb40af8acb2aa9ca6e1400fa69d970d836fd04983"
+      },
+      {
+        "relative_path": "stage2_phase3_confirm/metadata/phase3_confirmation_manifest.sha256.json",
+        "sha256": "0c1620edc480cd0e2bd7b5ec7634b57539a1f12cc39c9f3f582e4eec1b258c6d"
+      },
+      {
+        "relative_path": "stage2_phase3_confirm/tables/phase3_B_confirm_structural_alignment_metrics.parquet",
+        "sha256": "c7b20eb66c299bee5469b8a5bc66d374362a19ff5d8237693893479ac5839977"
+      },
+      {
+        "relative_path": "stage2_phase3_confirm/tables/phase3_B_confirm_field_grid.parquet",
+        "sha256": "dcfce67be6c2e18a60f5db12b690c743d6a62e7a10b7736ef1d03d2fc0d46a4c"
+      }
+    ],
+    "expected_full_rows": 3233208,
+    "maximum_coordinate_absolute_difference": 1e-12,
+    "expected_full_grid_changes": {
+      "features": 2,
+      "target": 2
+    },
+    "corrections": [
+      {
+        "key": [
+          307862,
+          3
+        ],
+        "array": "target",
+        "column": 1,
+        "native_hex": "-0x1.5559b57e6dbaep-56",
+        "historical_hex": "0x0.0p+0"
+      },
+      {
+        "key": [
+          307862,
+          4
+        ],
+        "array": "features",
+        "column": 1,
+        "native_hex": "-0x1.5559b57e6dbaep-56",
+        "historical_hex": "0x0.0p+0"
+      },
+      {
+        "key": [
+          396421,
+          3
+        ],
+        "array": "target",
+        "column": 1,
+        "native_hex": "-0x1.5559b96536386p-56",
+        "historical_hex": "0x0.0p+0"
+      },
+      {
+        "key": [
+          396421,
+          4
+        ],
+        "array": "features",
+        "column": 1,
+        "native_hex": "-0x1.5559b96536386p-56",
+        "historical_hex": "0x0.0p+0"
+      }
+    ]
+  },
+  "source_files": {
+    "s2_minimal_mechanism/main/tune_offset_dual_channel_phase1.py": "ebc161b5babc975727850301ca6cd50f8ae40c1eda837579ac08aff49edf69ac",
+    "s2_minimal_mechanism/main/freeze_offset_dual_channel_phase2.py": "67b048ad62c78256ddc87a6210f4112ca3a5646ed20e4c87e6ce38ca8431e190",
+    "s2_minimal_mechanism/main/confirm_offset_dual_channel_phase3.py": "b4594c7cdf710f872e9aaf459e06380925378e0d7b29cda4d7025be138cda12b",
+    "s4_cross_analysis/main/run_frozen_headline_learner_cluster_uncertainty.py": "97606ddee6824c8d4602ef39b51b60402382fdf7d2e58f7b0765be647461f4f3"
+  }
+}

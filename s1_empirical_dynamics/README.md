@@ -1,5 +1,7 @@
 # Empirical dynamics
 
+Use the EdNet-KT4 learner files and the EdNet Contents metadata from the [EdNet data release](https://github.com/riiid/ednet). Set `PREPROCESSED_ROOT` to a fresh, dedicated directory. The preprocessing step clears its `contents/`, `kt4/` and `metadata/` subdirectories by default.
+
 Set the repository, input and result paths:
 
 ```bash
@@ -26,3 +28,5 @@ Next:
 2. Complete the minimal-mechanism and Event-SSL primary workflows.
 3. Return to `robustness/README.md` for the remaining robustness workflows.
 4. Run `scripts/README.md`.
+
+The additional [generative construction controls](robustness/generative_construction_null/README.md) jointly rebuild the semantic coordinates from simulated responses under the recorded opportunity schedule. Run them after the semantic-specificity workflow has produced the activity-idle coordinate and its training-defined regions. The entry commands and prerequisite paths are in [Empirical robustness](robustness/README.md#generative-construction-controls).

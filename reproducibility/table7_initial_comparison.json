@@ -1,0 +1,1087 @@
+{
+  "purpose": "Independent full Table 7 reconstruction from per-seed outputs; no model refit",
+  "sources": [
+    {
+      "path": "outputs_KT4/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "7146831461c727661b5703c6a0d378ad83ce65b006b525b26bfad65e4d5cd3c2"
+    },
+    {
+      "path": "outputs_KT4/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "2e8ffdc5b37f8fba8965b17a10bfe52c6dc31670a96a23c285be4d251522bcd0"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_2026/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "4cd17aee5ddc1d655476c06e8dfecdbb5c2cbb0d97492625db4d3474554b31c7"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_2026/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "f2bede6edc00c85b918ae2f60ba5496b294f982b7ab2d83e7b102c0904c661a7"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_666/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "97292fbb8e8f79a8bc299971c483668f444f96d3148fd3b51db14b216fb44271"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_666/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "56782f1783dbea934a680bd2feed93430ea1b2289a5f75973b838427ddcccadf"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_606/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "d782be10f2418e3e79d4e44c6b066d67faf4b9f6a6769c632696f5cf8d43a383"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_606/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "90924d5d880cb7e5434c15ffa3e22b4cc3cb505085c4500856c6a030c885b18a"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_37/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "a3ff5797059e23404112089a224e8c2a6b0151a3fd10adaf49c92b1de9c602cf"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_37/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "dff934542fd7bbbc0ac21e2fe65c2f2b9248f6f073026de2b641e9e77f813205"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_4669/stage5_macro_sufficiency/evaluation/tables/stage5_macro_sufficiency_metrics_B_confirm.csv",
+      "sha256": "c86bcedb0dbc7339759206b83032ca23bb00e475dc313018debc0f996fea8c4b"
+    },
+    {
+      "path": "outputs_KT4/random_seed_experiments/seed_4669/stage5_representation_geometry/evaluation/tables/stage5_representation_geometry_metrics_all_splits.csv",
+      "sha256": "417d242fd658b26baa4559026d6724f3813dd624b3ca8f037cfb2f5c845d5a32"
+    }
+  ],
+  "stage5_rows": [
+    {
+      "seed": 42,
+      "cca_corr_1": 0.9912597144972602,
+      "cca_corr_2": 0.899766168798423,
+      "bottleneck_overall": 0.9083638293733849,
+      "bottleneck_coordinate": 0.9953178520192352,
+      "bottleneck_closure": 0.7987504286257138,
+      "bottleneck_drift": 0.8103188949960854,
+      "bottleneck_transition": 1.0025415157009374,
+      "bottleneck_task": 0.9169341029035347,
+      "residual_overall": 0.5973201153338711,
+      "residual_task": 0.9154505565136479,
+      "linear_overall": 1.0249206956976264
+    },
+    {
+      "seed": 2026,
+      "cca_corr_1": 0.9908683747541491,
+      "cca_corr_2": 0.9006770749529404,
+      "bottleneck_overall": 0.9213648215666718,
+      "bottleneck_coordinate": 0.9945507714040662,
+      "bottleneck_closure": 0.7981453206277702,
+      "bottleneck_drift": 0.869228139237775,
+      "bottleneck_transition": 0.9960447069111843,
+      "bottleneck_task": 0.9273484417228482,
+      "residual_overall": 0.5985204469322348,
+      "residual_task": 0.9046778518608259,
+      "linear_overall": 1.0394902886531188
+    },
+    {
+      "seed": 666,
+      "cca_corr_1": 0.9915475901573295,
+      "cca_corr_2": 0.9011788830479727,
+      "bottleneck_overall": 0.876525001315535,
+      "bottleneck_coordinate": 0.9955482092392925,
+      "bottleneck_closure": 0.7976514275876405,
+      "bottleneck_drift": 0.696058336183307,
+      "bottleneck_transition": 0.9942254035051128,
+      "bottleneck_task": 0.9684690248919668,
+      "residual_overall": 0.5928397547154353,
+      "residual_task": 0.9957998447445411,
+      "linear_overall": 1.0390529241708057
+    },
+    {
+      "seed": 606,
+      "cca_corr_1": 0.9916741914690215,
+      "cca_corr_2": 0.9036864357757428,
+      "bottleneck_overall": 0.8985589338460601,
+      "bottleneck_coordinate": 0.9952052499846215,
+      "bottleneck_closure": 0.7961927466455201,
+      "bottleneck_drift": 0.7773077563142659,
+      "bottleneck_transition": 1.0003265695765216,
+      "bottleneck_task": 0.9168374257338162,
+      "residual_overall": 0.6108749404796149,
+      "residual_task": 0.9417549872361143,
+      "linear_overall": 1.0366248565658656
+    },
+    {
+      "seed": 37,
+      "cca_corr_1": 0.9906744146508142,
+      "cca_corr_2": 0.9012887950677703,
+      "bottleneck_overall": 0.9285033307853213,
+      "bottleneck_coordinate": 0.9957417542401897,
+      "bottleneck_closure": 0.8015633491554183,
+      "bottleneck_drift": 0.8849143819294295,
+      "bottleneck_transition": 1.0036180973328286,
+      "bottleneck_task": 0.9317144823772472,
+      "residual_overall": 0.5928486175570606,
+      "residual_task": 0.9483220310731019,
+      "linear_overall": 1.0391723267790676
+    },
+    {
+      "seed": 4669,
+      "cca_corr_1": 0.9912018599553896,
+      "cca_corr_2": 0.8994553098786581,
+      "bottleneck_overall": 0.9085591432866901,
+      "bottleneck_coordinate": 0.99587535244719,
+      "bottleneck_closure": 0.803959685496357,
+      "bottleneck_drift": 0.8093673919452495,
+      "bottleneck_transition": 0.9998617498807016,
+      "bottleneck_task": 0.9447758607761859,
+      "residual_overall": 0.5957504353580407,
+      "residual_task": 0.956546569603779,
+      "linear_overall": 1.0342643797255089
+    }
+  ],
+  "checks": [
+    {
+      "metric": "cca_corr_1",
+      "n": 6,
+      "values": [
+        0.9912597144972602,
+        0.9908683747541491,
+        0.9915475901573295,
+        0.9916741914690215,
+        0.9906744146508142,
+        0.9912018599553896
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9912043575806607,
+        0.0003834963048821555,
+        0.9908019028905489,
+        0.9916068122707725,
+        0.9906744146508142,
+        0.9916741914690215
+      ],
+      "rounded": [
+        0.9912,
+        0.0004,
+        0.9908,
+        0.9916,
+        0.9907,
+        0.9917
+      ],
+      "manuscript": [
+        0.9912,
+        0.0004,
+        0.9908,
+        0.9916,
+        0.9907,
+        0.9917
+      ],
+      "match": true
+    },
+    {
+      "metric": "cca_corr_2",
+      "n": 6,
+      "values": [
+        0.899766168798423,
+        0.9006770749529404,
+        0.9011788830479727,
+        0.9036864357757428,
+        0.9012887950677703,
+        0.8994553098786581
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9010087779202511,
+        0.0015062910869338983,
+        0.8994280223695651,
+        0.9025895334709372,
+        0.8994553098786581,
+        0.9036864357757428
+      ],
+      "rounded": [
+        0.901,
+        0.0015,
+        0.8994,
+        0.9026,
+        0.8995,
+        0.9037
+      ],
+      "manuscript": [
+        0.901,
+        0.0015,
+        0.8994,
+        0.9026,
+        0.8995,
+        0.9037
+      ],
+      "match": true
+    },
+    {
+      "metric": "bottleneck_overall",
+      "n": 6,
+      "values": [
+        0.9083638293733849,
+        0.9213648215666718,
+        0.876525001315535,
+        0.8985589338460601,
+        0.9285033307853213,
+        0.9085591432866901
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9069791766956106,
+        0.018292112140628824,
+        0.8877827822862607,
+        0.9261755711049604,
+        0.876525001315535,
+        0.9285033307853213
+      ],
+      "rounded": [
+        0.907,
+        0.0183,
+        0.8878,
+        0.9262,
+        0.8765,
+        0.9285
+      ],
+      "manuscript": [
+        0.9037,
+        0.0186,
+        0.8842,
+        0.9232,
+        0.8765,
+        0.9285
+      ],
+      "match": false
+    },
+    {
+      "metric": "bottleneck_coordinate",
+      "n": 6,
+      "values": [
+        0.9953178520192352,
+        0.9945507714040662,
+        0.9955482092392925,
+        0.9952052499846215,
+        0.9957417542401897,
+        0.99587535244719
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9953731982224325,
+        0.000474610776120726,
+        0.9948751247588927,
+        0.9958712716859723,
+        0.9945507714040662,
+        0.99587535244719
+      ],
+      "rounded": [
+        0.9954,
+        0.0005,
+        0.9949,
+        0.9959,
+        0.9946,
+        0.9959
+      ],
+      "manuscript": [
+        0.9954,
+        0.0005,
+        0.9949,
+        0.9959,
+        0.9946,
+        0.996
+      ],
+      "match": false
+    },
+    {
+      "metric": "bottleneck_closure",
+      "n": 6,
+      "values": [
+        0.7987504286257138,
+        0.7981453206277702,
+        0.7976514275876405,
+        0.7961927466455201,
+        0.8015633491554183,
+        0.803959685496357
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.7993771596897367,
+        0.0028568452591548605,
+        0.7963790844571117,
+        0.8023752349223616,
+        0.7961927466455201,
+        0.803959685496357
+      ],
+      "rounded": [
+        0.7994,
+        0.0029,
+        0.7964,
+        0.8024,
+        0.7962,
+        0.804
+      ],
+      "manuscript": [
+        0.7989,
+        0.0026,
+        0.7962,
+        0.8017,
+        0.7962,
+        0.8026
+      ],
+      "match": false
+    },
+    {
+      "metric": "bottleneck_drift",
+      "n": 6,
+      "values": [
+        0.8103188949960854,
+        0.869228139237775,
+        0.696058336183307,
+        0.7773077563142659,
+        0.8849143819294295,
+        0.8093673919452495
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.8078658167676854,
+        0.06803645509065902,
+        0.7364659359833655,
+        0.8792656975520053,
+        0.696058336183307,
+        0.8849143819294295
+      ],
+      "rounded": [
+        0.8079,
+        0.068,
+        0.7365,
+        0.8793,
+        0.6961,
+        0.8849
+      ],
+      "manuscript": [
+        0.7958,
+        0.0698,
+        0.7226,
+        0.869,
+        0.6961,
+        0.8849
+      ],
+      "match": false
+    },
+    {
+      "metric": "bottleneck_transition",
+      "n": 6,
+      "values": [
+        1.0025415157009374,
+        0.9960447069111843,
+        0.9942254035051128,
+        1.0003265695765216,
+        1.0036180973328286,
+        0.9998617498807016
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9994363404845477,
+        0.0036540313888297577,
+        0.9956016697158111,
+        1.003271011253284,
+        0.9942254035051128,
+        1.0036180973328286
+      ],
+      "rounded": [
+        0.9994,
+        0.0037,
+        0.9956,
+        1.0033,
+        0.9942,
+        1.0036
+      ],
+      "manuscript": [
+        0.9991,
+        0.0037,
+        0.9952,
+        1.0031,
+        0.9942,
+        1.0036
+      ],
+      "match": false
+    },
+    {
+      "metric": "bottleneck_task",
+      "n": 6,
+      "values": [
+        0.9169341029035347,
+        0.9273484417228482,
+        0.9684690248919668,
+        0.9168374257338162,
+        0.9317144823772472,
+        0.9447758607761859
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9343465564009332,
+        0.01969151015998662,
+        0.9136815838356694,
+        0.955011528966197,
+        0.9168374257338162,
+        0.9684690248919668
+      ],
+      "rounded": [
+        0.9343,
+        0.0197,
+        0.9137,
+        0.955,
+        0.9168,
+        0.9685
+      ],
+      "manuscript": [
+        0.9342,
+        0.0196,
+        0.9136,
+        0.9547,
+        0.9168,
+        0.9685
+      ],
+      "match": false
+    },
+    {
+      "metric": "residual_overall",
+      "n": 6,
+      "values": [
+        0.5973201153338711,
+        0.5985204469322348,
+        0.5928397547154353,
+        0.6108749404796149,
+        0.5928486175570606,
+        0.5957504353580407
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.5980257183960429,
+        0.006704008434592179,
+        0.5909902930146186,
+        0.6050611437774672,
+        0.5928397547154353,
+        0.6108749404796149
+      ],
+      "rounded": [
+        0.598,
+        0.0067,
+        0.591,
+        0.6051,
+        0.5928,
+        0.6109
+      ],
+      "manuscript": [
+        0.5998,
+        0.0074,
+        0.5921,
+        0.6075,
+        0.5928,
+        0.6109
+      ],
+      "match": false
+    },
+    {
+      "metric": "residual_task",
+      "n": 6,
+      "values": [
+        0.9154505565136479,
+        0.9046778518608259,
+        0.9957998447445411,
+        0.9417549872361143,
+        0.9483220310731019,
+        0.956546569603779
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9437586401720017,
+        0.032327427641394645,
+        0.9098330854589637,
+        0.9776841948850398,
+        0.9046778518608259,
+        0.9957998447445411
+      ],
+      "rounded": [
+        0.9438,
+        0.0323,
+        0.9098,
+        0.9777,
+        0.9047,
+        0.9958
+      ],
+      "manuscript": [
+        0.9436,
+        0.0322,
+        0.9097,
+        0.9774,
+        0.9047,
+        0.9958
+      ],
+      "match": false
+    },
+    {
+      "metric": "linear_overall",
+      "n": 6,
+      "values": [
+        1.0249206956976264,
+        1.0394902886531188,
+        1.0390529241708057,
+        1.0366248565658656,
+        1.0391723267790676,
+        1.0342643797255089
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        1.0355875785986655,
+        0.005598202870279344,
+        1.0297126249872264,
+        1.0414625322101045,
+        1.0249206956976264,
+        1.0394902886531188
+      ],
+      "rounded": [
+        1.0356,
+        0.0056,
+        1.0297,
+        1.0415,
+        1.0249,
+        1.0395
+      ],
+      "manuscript": [
+        1.0356,
+        0.0056,
+        1.0297,
+        1.0415,
+        1.0249,
+        1.0395
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_coordinate_corr_M",
+      "n": 6,
+      "values": [
+        0.883671374679744,
+        0.8823872123976058,
+        0.8864306338841687,
+        0.8842964860361693,
+        0.8850302337605586,
+        0.88325214701219
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.8841780146284061,
+        0.001423762195401591,
+        0.882683867837815,
+        0.8856721614189971,
+        0.8823872123976058,
+        0.8864306338841687
+      ],
+      "rounded": [
+        0.8842,
+        0.0014,
+        0.8827,
+        0.8857,
+        0.8824,
+        0.8864
+      ],
+      "manuscript": [
+        0.8842,
+        0.0014,
+        0.8827,
+        0.8857,
+        0.8824,
+        0.8864
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_coordinate_corr_Psi",
+      "n": 6,
+      "values": [
+        0.9904926938031047,
+        0.9888071042952087,
+        0.9905637350671638,
+        0.9908363959534584,
+        0.9910639955650618,
+        0.9919841129465277
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.9906246729384208,
+        0.001040249569105123,
+        0.9895329979662155,
+        0.9917163479106261,
+        0.9888071042952087,
+        0.9919841129465277
+      ],
+      "rounded": [
+        0.9906,
+        0.001,
+        0.9895,
+        0.9917,
+        0.9888,
+        0.992
+      ],
+      "manuscript": [
+        0.9906,
+        0.001,
+        0.9895,
+        0.9917,
+        0.9888,
+        0.992
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_one_step_rmse_M",
+      "n": 6,
+      "values": [
+        0.10995059460401535,
+        0.11122903227806091,
+        0.1075529158115387,
+        0.10874244570732117,
+        0.11146433651447296,
+        0.10938172042369843
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.10972017422318459,
+        0.0014926058641174266,
+        0.10815378043306202,
+        0.11128656801330715,
+        0.1075529158115387,
+        0.11146433651447296
+      ],
+      "rounded": [
+        0.1097,
+        0.0015,
+        0.1082,
+        0.1113,
+        0.1076,
+        0.1115
+      ],
+      "manuscript": [
+        0.1097,
+        0.0015,
+        0.1082,
+        0.1113,
+        0.1076,
+        0.1115
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_one_step_rmse_Psi",
+      "n": 6,
+      "values": [
+        0.03534725680947304,
+        0.03675905987620354,
+        0.033597156405448914,
+        0.03610072657465935,
+        0.03464249148964882,
+        0.03337239846587181
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.034969848270217575,
+        0.0013539492169757055,
+        0.03354896570731401,
+        0.03639073083312114,
+        0.03337239846587181,
+        0.03675905987620354
+      ],
+      "rounded": [
+        0.035,
+        0.0014,
+        0.0335,
+        0.0364,
+        0.0334,
+        0.0368
+      ],
+      "manuscript": [
+        0.035,
+        0.0014,
+        0.0335,
+        0.0364,
+        0.0334,
+        0.0368
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_next_state_occupancy_js",
+      "n": 6,
+      "values": [
+        0.2005163284559438,
+        0.1954845024174813,
+        0.19122889995572384,
+        0.2034564551819527,
+        0.19443300854372597,
+        0.2038289288560024
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.19815802056847168,
+        0.00519288653073055,
+        0.19270842036918726,
+        0.2036076207677561,
+        0.19122889995572384,
+        0.2038289288560024
+      ],
+      "rounded": [
+        0.1982,
+        0.0052,
+        0.1927,
+        0.2036,
+        0.1912,
+        0.2038
+      ],
+      "manuscript": [
+        0.1982,
+        0.0052,
+        0.1927,
+        0.2036,
+        0.1912,
+        0.2038
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_anchor_drift_vector_corr",
+      "n": 6,
+      "values": [
+        0.8802278296481509,
+        0.8820479138878259,
+        0.8968893361160413,
+        0.8777634163878104,
+        0.882964700633783,
+        0.8873278558944527
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.8845368420946773,
+        0.006833551683291162,
+        0.8773654694111604,
+        0.8917082147781942,
+        0.8777634163878104,
+        0.8968893361160413
+      ],
+      "rounded": [
+        0.8845,
+        0.0068,
+        0.8774,
+        0.8917,
+        0.8778,
+        0.8969
+      ],
+      "manuscript": [
+        0.8845,
+        0.0068,
+        0.8774,
+        0.8917,
+        0.8778,
+        0.8969
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_learned_plane_drift_vector_corr",
+      "n": 6,
+      "values": [
+        0.6877476377668944,
+        0.6915568651983165,
+        0.6629872218964488,
+        0.6933553374514383,
+        0.695171174977927,
+        0.6663299718039796
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.6828580348491674,
+        0.014348593821821494,
+        0.6678001091101566,
+        0.6979159605881782,
+        0.6629872218964488,
+        0.695171174977927
+      ],
+      "rounded": [
+        0.6829,
+        0.0143,
+        0.6678,
+        0.6979,
+        0.663,
+        0.6952
+      ],
+      "manuscript": [
+        0.6829,
+        0.0143,
+        0.6678,
+        0.6979,
+        0.663,
+        0.6952
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_learned_plane_occupancy_weighted_local_drift_cosine",
+      "n": 6,
+      "values": [
+        0.8629410393217833,
+        0.8489717937855985,
+        0.8527906281085191,
+        0.8284916835896854,
+        0.8497998128964863,
+        0.8600495118329805
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.8505074115891755,
+        0.012152456135499465,
+        0.8377541910083098,
+        0.8632606321700412,
+        0.8284916835896854,
+        0.8629410393217833
+      ],
+      "rounded": [
+        0.8505,
+        0.0122,
+        0.8378,
+        0.8633,
+        0.8285,
+        0.8629
+      ],
+      "manuscript": [
+        0.8505,
+        0.0122,
+        0.8378,
+        0.8633,
+        0.8285,
+        0.8629
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_learned_plane_transition_mean_row_tv",
+      "n": 6,
+      "values": [
+        0.09416650851703344,
+        0.11228710130689949,
+        0.09932498875530288,
+        0.10993385541387878,
+        0.11796107255483,
+        0.1013786792545854
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.10584203430042166,
+        0.008987372254171328,
+        0.09641036554788199,
+        0.11527370305296133,
+        0.09416650851703344,
+        0.11796107255483
+      ],
+      "rounded": [
+        0.1058,
+        0.009,
+        0.0964,
+        0.1153,
+        0.0942,
+        0.118
+      ],
+      "manuscript": [
+        0.1058,
+        0.009,
+        0.0964,
+        0.1153,
+        0.0942,
+        0.118
+      ],
+      "match": true
+    },
+    {
+      "metric": "full_learned_plane_self_transition_corr",
+      "n": 6,
+      "values": [
+        0.8462329343587597,
+        0.6912834294597827,
+        0.6633859624580506,
+        0.6738601745248647,
+        0.6263380717012378,
+        0.7178924314075288
+      ],
+      "summary_order": [
+        "mean",
+        "sample_sd",
+        "t95_lower",
+        "t95_upper",
+        "min",
+        "max"
+      ],
+      "actual": [
+        0.703165500651704,
+        0.0763806576696734,
+        0.6230089162944545,
+        0.7833220850089535,
+        0.6263380717012378,
+        0.8462329343587597
+      ],
+      "rounded": [
+        0.7032,
+        0.0764,
+        0.623,
+        0.7833,
+        0.6263,
+        0.8462
+      ],
+      "manuscript": [
+        0.7032,
+        0.0764,
+        0.623,
+        0.7833,
+        0.6263,
+        0.8462
+      ],
+      "match": true
+    }
+  ],
+  "all_match": false
+}

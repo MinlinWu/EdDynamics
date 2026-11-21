@@ -616,7 +616,7 @@ def main() -> None:
         [
             "# Alignment-specificity control numerical report",
             "",
-            "This reviewer-motivated comparison was specified post hoc. The alignment-based state and one denominator-matched activity--idle comparator use the same response-order axis, 10-day exposure memory, active-plus-idle denominator, activity and idle mappings, formal eligible rows, user weights, grid thresholds and construction-null opportunity strata. The comparator removes content--demand alignment from the second axis but does not remove all event semantics and also changes the numerator roles of neutral activity and idle. Each state defines its own A_train core. A_val is the primary comparison; B_confirm was appended only after the protocol freeze.",
+            "This comparison was specified post hoc. The alignment-based state and one denominator-matched activity--idle comparator use the same response-order axis, 10-day exposure memory, active-plus-idle denominator, activity and idle mappings, formal eligible rows, user weights, grid thresholds and construction-null opportunity strata. The comparator removes content--demand alignment from the second axis but does not remove all event semantics and also changes the numerator roles of neutral activity and idle. Each state defines its own A_train core. A_val is the primary comparison; B_confirm was appended only after the protocol freeze.",
             "",
             "## State-level results",
             "",
@@ -664,7 +664,7 @@ def main() -> None:
             "primary_descriptive_effect_size": "observed construction-null departure divided by held supported field RMS",
             "null_dispersion_ratios_treated_as_secondary": True,
             "between_coordinate_inference_performed": False,
-            "analysis_status": "post hoc reviewer-motivated comparison",
+            "analysis_status": "post hoc comparison",
             "A_val_primary_post_hoc_comparison": True,
             "protocol_frozen_before_control_specific_confirmation_read": True,
             "B_confirm_post_hoc_output_only_replication": True,

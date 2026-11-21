@@ -859,7 +859,7 @@ def build_markdown(args: argparse.Namespace, ledger: List[Dict[str, Any]], bundl
     out.append("")
     out.append(markdown_table(tables.get("figure3_kinetic_recovery_metrics", pd.DataFrame()), max_rows=10))
     out.append("")
-    out.append("**Residence interpretation boundary:** the mechanism residence reference is geometric and transition-implied. It should not be described as a free-running mechanism residence distribution unless a separate free-running simulation is added.")
+    out.append("**Residence reference:** the geometric residence distribution follows from the mechanism's statewise one-step self-transition probabilities. Free-running residence times were not simulated in this comparison.")
     out.append("")
 
     out.append("## Statewise transition and transition-implied residence metrics")

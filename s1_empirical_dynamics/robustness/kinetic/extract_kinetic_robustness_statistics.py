@@ -372,7 +372,7 @@ def recompute_statewise_maxT(
     familywise = {
         "metric": "statewise_tail_excess_fixed10_studentized_maxT",
         "direction_supporting_observed_excess": "greater",
-        "analysis_status": "reviewer-motivated post hoc family-wise endpoint",
+        "analysis_status": "post hoc family-wise endpoint",
         "alpha": float(alpha),
         "observed_maxT": observed_maximum,
         "null_mean": float(np.mean(null_maximum)),

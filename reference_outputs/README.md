@@ -1,10 +1,12 @@
 # Numeric reference outputs
 
-Commands: [reproduction order](../README.md#dependency-order). Code paths are relative to the repository root.
+The [reproduction guide](../README.md#dependency-order) gives the order for running the analyses. Code paths below are relative to the repository root.
 
 ## Core experiments
 
-| Public report | Source report | Extraction script |
+The first column links to the numerical reports included here. The second gives the filename written by the corresponding extractor in a local run.
+
+| Report in this repository | Generated filename | Extraction script |
 | --- | --- | --- |
 | [01_empirical_dynamics_and_kinetics_numeric_results.md](01_empirical_dynamics_and_kinetics_numeric_results.md) | `publication_results_fill_map.md` | `s1_empirical_dynamics/scripts/extract_empirical_effective_dynamics_publication_statistics.py` |
 | [02_construction_matched_null_numeric_results.md](02_construction_matched_null_numeric_results.md) | `construction_matched_null_numeric_report.md` | `s1_empirical_dynamics/scripts/extract_construction_matched_null_numeric_report.py` |
@@ -17,7 +19,7 @@ Commands: [reproduction order](../README.md#dependency-order). Code paths are re
 
 Reports below are generated locally.
 
-| Source report | Generation code |
+| Generated filename | Generation code |
 | --- | --- |
 | `six_seed_null_common_target_audit_report.md` | `s4_cross_analysis/robustness/run_six_seed_null_common_target_audit.sh`<br>`s4_cross_analysis/main/run_six_seed_null_common_target_audit.py`<br>`s4_cross_analysis/scripts/extract_six_seed_null_common_target_audit_report.py` |
 | `mechanism_score_contract_numeric_report.md` | `s2_minimal_mechanism/robustness/run_mechanism_score_contract_robustness.sh`<br>`s2_minimal_mechanism/robustness/audit_mechanism_score_contract_pareto.py`<br>`s2_minimal_mechanism/robustness/run_minimal_mechanism_score_contract_rerun.py`<br>`s2_minimal_mechanism/scripts/extract_mechanism_score_contract_numeric_report.py` |
@@ -35,3 +37,9 @@ Reports below are generated locally.
 | `empirical_effective_dynamics_supplementary_report.md` | `s5_supplementary/scripts/empirical/extract_empirical_effective_dynamics_supplementary_statistics.py` |
 | `event_ssl_random_seed_additional_information.md` | `s3_event_ssl/robustness/random_seed_workflows/seed_<seed>/run_all.sh`<br>`s3_event_ssl/scripts/extract_event_ssl_random_seed_statistics.py` |
 | `semantic_specificity_control_report.md` | `s1_empirical_dynamics/robustness/semantic_specificity/run_semantic_specificity_control.sh`<br>`s1_empirical_dynamics/robustness/semantic_specificity/freeze_semantic_specificity_protocol.py`<br>`s1_empirical_dynamics/robustness/semantic_specificity/run_nonsemantic_coordinate_control.py`<br>`s1_empirical_dynamics/robustness/semantic_specificity/run_nonsemantic_construction_null.py`<br>`s1_empirical_dynamics/robustness/semantic_specificity/summarize_semantic_specificity_control.py` |
+
+## Confirmation-sample counts in report 04
+
+In the [Event-SSL metric ledger](04_event_ssl_and_controls_numeric_results.md#metric-ledger), the predictive-state model's confirmation cohort (`B_confirm`) contains 3,233,208 intervals from 56,195 distinct learners. Under the results root, `stage4_event_ssl/evaluation_predictive_state/metadata/stage4_event_ssl_evaluation_manifest.json` records these counts in `splits.B_confirm.rows` and `splits.B_confirm.users`. The [learner-cluster uncertainty workflow](../s4_cross_analysis/robustness/README.md) generates a report in `frozen_headline_learner_cluster_uncertainty/numeric_report/` that confirms both models use the same matched sample.
+
+The original publication extractor reads `n_rows` and `n_users` from a structural-metrics table that omits both fields. Regenerating that ledger from the preserved structural table produces two missing values. Use the evaluation manifest for these two published metadata cells. Other missing or inapplicable values retain their original meaning.

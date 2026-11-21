@@ -187,7 +187,7 @@ def main() -> None:
     payload = {
         "script": Path(__file__).name,
         "created_at_unix": float(time.time()),
-        "analysis_status": "post hoc reviewer-motivated alignment-specificity comparison",
+        "analysis_status": "post hoc alignment-specificity comparison",
         "confirmation_locked_before_run": True,
         "coordinate_manifest": source_record(coordinate_manifest_path),
         "coordinate_manifest_sha256_at_freeze": preconfirmation_coordinate_sha,

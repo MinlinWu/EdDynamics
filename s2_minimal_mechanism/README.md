@@ -33,3 +33,5 @@ python ${MECHANISM_MAIN}/confirm_offset_dual_channel_phase3.py \
 ```
 
 Then run `robustness/README.md` and `scripts/README.md` when their prerequisite outputs exist.
+
+The [conditional-predictor comparisons](robustness/conditional_baselines/README.md) add calibrated accounting and linear predictors while keeping the original four-term model frozen. They require the original uncertainty summaries and all six neural prediction exports in addition to the primary mechanism outputs. Follow the commands in [Minimal-mechanism robustness](robustness/README.md#conditional-predictor-comparisons), using a separate result root. The resulting keyed predictions are also inputs to the SSL information controls and common-reference cross-analysis.

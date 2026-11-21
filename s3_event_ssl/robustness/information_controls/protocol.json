@@ -1,0 +1,101 @@
+{
+  "version": "ssl-information-controls-v1",
+  "scope": [
+    "S0_identity",
+    "S1_same_readout",
+    "S2_H_HZ",
+    "S3_aug_clean",
+    "existing_evidence_reuse"
+  ],
+  "all_seeds": [
+    42,
+    2026,
+    666,
+    606,
+    37,
+    4669
+  ],
+  "new_seeds": [
+    42,
+    2026,
+    666
+  ],
+  "device": "CPU preparation and evaluation; S3 seed42 CPU, remaining five seeds GPU",
+  "precision": "float32; GPU AMP, TF32 and compilation disabled",
+  "grid_bins": 40,
+  "minimum_count": 30,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261117,
+  "s2": {
+    "train_max_rows": 300000,
+    "val_max_rows": 250000,
+    "epochs": 8,
+    "batch_size": 192,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "huber_beta": 0.05
+  },
+  "s3": {
+    "epochs": 8,
+    "seq_len": 256,
+    "stride": 128,
+    "min_seq_len": 3,
+    "warmup_steps": 8,
+    "batch_size": 192,
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "future_steps": [
+      1,
+      2,
+      4
+    ],
+    "probe_rows": 300000,
+    "ridge_alpha": 1.0
+  },
+  "primary_contrasts": {
+    "S1": [
+      "same_readout_minus_proposal_next_MSE",
+      "same_readout_minus_proposal_velocity_D2"
+    ],
+    "S2": [
+      "H_minus_HZ_next_MSE",
+      "H_minus_HZ_endpoint_D2"
+    ],
+    "S3": [
+      "clean_minus_aug_current_MSE",
+      "clean_minus_aug_velocity_D2"
+    ]
+  },
+  "inference": "seed42 paired whole-learner bootstrap; 2000 requested; 97.5% basic per two main contrasts plus 95% diagnostics, fixed and reselected separately; do not discard nonfinite draws",
+  "stop": "No separate factorial ablations of the state and closure losses, no architecture search, no additional record-shuffling condition, and no refitting of accounting, autoregressive, generating-control or mechanism models. Negative scientific outcomes do not trigger extra tuning.",
+  "future_mask_policy": "Exclude all lineage columns from inputs AND future-target average; no direct macrostate gradient or checkpoint selection in S3.",
+  "cpu_bridge": "Archived GPU/BF16 predictions remain immutable. CPU replay is a separate numeric view; checkpoint/input/target identities are checked; nontrivial precision shifts are reported, not relabeled as exact reproduction.",
+  "reporting_clarifications": {
+    "primary_support": "fixed; reselected is separately labelled support sensitivity",
+    "intervals": "nominal method ranges conditional on frozen models; finite draws and same-sign methods do not validate coverage",
+    "adjustment_family": "two prespecified contrasts within each block; not a joint guarantee across all blocks",
+    "comparison_objects": "actual same-readout T-S, conditional proposal P-S, and endpoint N-X remain distinct",
+    "execution_status": "technical smoke is distinct from formal scientific execution",
+    "pure_ssl_role": "existing evidence for recovery without direct macro encoder losses; retains derived inputs and separate probes"
+  },
+  "s3_seeds": [
+    42,
+    2026,
+    666,
+    606,
+    37,
+    4669
+  ],
+  "s3_cpu_seeds": [
+    42
+  ],
+  "s3_gpu_seeds": [
+    2026,
+    666,
+    606,
+    37,
+    4669
+  ],
+  "cpu_reference_alternative": "The all command preserves the original three-seed CPU control design; use cpu plus slurm_s3.sbatch for the reported six-seed design."
+}

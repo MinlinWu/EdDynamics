@@ -146,3 +146,5 @@ python ${STRUCTURAL_ANALYSES}/stage5_representation_geometry_evaluate.py \
 ```
 
 Next run `robustness/README.md`, followed by `scripts/README.md`. Run the additional seeds before the state-only and objective-control workflows.
+
+Supplementary Note 9 and Table 14 compare state readouts, conditional next-state predictions and the effect of removing alignment-derived information. Complete the original full and record-shuffled Event-SSL runs at all six seeds and the [conditional-predictor comparison](../s2_minimal_mechanism/robustness/conditional_baselines/README.md) first. The [launch commands](robustness/README.md#ssl-information-controls) run the representative seed-42 fit on CPU and five further paired fits on GPUs. The [analysis guide](robustness/information_controls/README.md) explains the learner-bootstrap intervals and the separate summaries across training seeds.

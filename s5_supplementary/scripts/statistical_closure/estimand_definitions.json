@@ -1,0 +1,35 @@
+[
+  {
+    "id": "original_joined_field_analysis",
+    "estimand": "Matched eligible prediction-interval fields in the confirmation cohort",
+    "row_weight": "Reciprocal of each learner's matched eligible prediction-interval count",
+    "cell_estimator": "Weighted increment sum divided by weighted origin mass",
+    "final_weight": "Vector and speed Pearson correlations use unweighted cell components; local direction cosine uses eligible-origin mass",
+    "support": "The original empirical-anchor support and the separate learned-plane intersection; support reselection reapplies the original transition-count threshold",
+    "bootstrap_contract": "Shared learner-cell sufficient statistics and aggregation for the point and draws; original random seed 20260806; finite-value intervals retained only at a finite fraction of at least 0.99",
+    "interpretation": "Conditional sampling diagnostics for frozen models; bias and finite fractions accompany all interval methods; no nominal coverage guarantee follows from completeness",
+    "source": "s4_cross_analysis/main/run_frozen_headline_learner_cluster_uncertainty.py"
+  },
+  {
+    "id": "original_full_panel_reference",
+    "estimand": "Full-panel weighted empirical and model fields compared with the original innovation-reassignment expectation",
+    "row_weight": "Reciprocal of all panel observations for each learner, computed before eligible-drift filtering",
+    "cell_estimator": "Full-panel learner-normalised weighted increment means over retained transitions",
+    "final_weight": "Field discrepancy and cosine use full-panel finite in-range state occupancy renormalised on support; Pearson vector and speed correlations use unweighted cell components",
+    "support": "Original reference-analysis drift mask and archived seed fields",
+    "bootstrap_contract": "Original reference points and seed summaries retain their own estimand; intervals from matched eligible fields cannot be transferred to these points",
+    "interpretation": "The full-panel and eligible-interval summaries are distinct; this report does not provide a numerical decomposition of their differences",
+    "source": "s1_empirical_dynamics/robustness/construction_null/run_construction_matched_null.py; s4_cross_analysis/main/evaluate_null_referenced_downstream_recovery.py; s4_cross_analysis/main/run_six_seed_null_common_target_audit.py"
+  },
+  {
+    "id": "eligible_interval_reference_comparisons",
+    "estimand": "Empirical, four-term mechanism, accounting-reference and neural fields using eligible prediction intervals",
+    "row_weight": "Reciprocal of each learner's original valid mechanism prediction-row count",
+    "cell_estimator": "Eligible-row weighted increment means",
+    "final_weight": "Weighted squared field discrepancy and cosine use eligible-origin mass renormalised on common support; Pearson vector and speed correlations use unweighted cell components",
+    "support": "Fixed common empirical-anchor support or support reselected using the original transition-count threshold; fixed vector statistics require positive resampled mass in every retained cell",
+    "bootstrap_contract": "SeedSequence([42,112358,replicate]); all requested draws must be finite for a reported interval; two primary discrepancy contrasts use 97.5% basic intervals",
+    "interpretation": "The strict reporting rule and random stream differ from the original joined-field analysis; incomplete vector statistics are retained as missing, and reselected support remains a sensitivity analysis",
+    "source": "Mechanism-comparison data and statistics modules; common-reference three-way analysis"
+  }
+]

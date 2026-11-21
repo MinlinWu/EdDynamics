@@ -387,7 +387,7 @@ def statewise_maxT_inference(
             {
                 "metric": "statewise_tail_excess_fixed10_studentized_maxT",
                 "direction_supporting_observed_excess": "greater",
-                "analysis_status": "reviewer-motivated post hoc family-wise endpoint",
+                "analysis_status": "post hoc family-wise endpoint",
                 "alpha": float(alpha),
                 "observed_maxT": observed_maximum,
                 "null_mean": float(np.mean(null_maximum)),
@@ -938,7 +938,7 @@ def main() -> None:
             "metric": "aggregate_mean_log_rmst_lift_fixed10",
             "reference": "each observed or surrogate trajectory's own Pii-matched geometric process",
             "test": "+1 one-sided Monte Carlo comparison against the declared recursive surrogates",
-            "status": "reviewer-motivated post hoc aggregate robustness endpoint; the 10-step horizon was inherited unchanged from the formal analysis",
+            "status": "post hoc aggregate robustness endpoint; the 10-step horizon was inherited unchanged from the formal analysis",
         },
         "statewise_familywise_endpoint": {
             "metric": "tail_excess_fixed10",
@@ -948,7 +948,7 @@ def main() -> None:
             "positive_state_rule": "observed fixed-10 tail excess greater than zero and maxT-adjusted p below 0.05",
             "multi_state_support_rule": "at least two frozen states satisfy the positive-state rule",
             "alpha": STATEWISE_FWER_ALPHA,
-            "status": "reviewer-motivated post hoc statewise family-wise endpoint; it complements rather than replaces the aggregate endpoint",
+            "status": "post hoc statewise family-wise endpoint; it complements rather than replaces the aggregate endpoint",
         },
         "secondary_outputs": [
             "diagonal margin",
